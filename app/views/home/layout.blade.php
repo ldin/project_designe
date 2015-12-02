@@ -16,7 +16,7 @@
 
     @yield('header')
 
-     <link href="/css/main.min.css?0003" rel="stylesheet">
+     <link href="/css/main.min.css?01" rel="stylesheet">
 
  </head>
 
@@ -30,7 +30,7 @@
     </div>
     -->
     <div id="menu" class="relative">
-        <nav class="navbar navbar-default">
+        <nav class="navbar">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -55,15 +55,16 @@
                         @endif
                         -->
 
-                        <!--  -->
-                        <li><a href="#services">no Услуги</a></li>
-                        <li><a href="/styles">Стили</a></li>
                         <li class="main-logo hidden-xs">
                             <a href="/#header"  id="main-logo">PMI designe</a>
                         </li>
-                        <li><a href="#news">Новости</a></li>
-                        <li><a href="#contact">Контакты</a></li>
-
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/#services">Услуги</a></li>
+                        <li><a href="/styles">Стили</a></li>
+                        <li><a href="/styles">Стоимость</a></li>
+                        <li><a href="/#news">Новости</a></li>
+                        <li><a href="/#contact">Контакты</a></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
@@ -80,15 +81,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-xs-6">
-                    <p class="h1">Новости</p>
+                    <br>
+                    <img src="/images/ASDlogo-w.png">
+                    <p class="h1">Архитектура<br> Строительство<br> Дизайн</p>
 
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <p class="h1">Наши услуги</p>
                     <ul>
-                        <li>Концепция, <br /> проектирование </li>
-                        <li>3D моделирование, <br /> визуализация</li>
-                        <li>Сопровождение, <br /> декорирование</li>
+                        <li>Концепция </li>
+                        <li>Проектирование </li>
+                        <li>3D моделирование</li>
+                        <li>Визуализация</li>
+                        <li>Сопровождение</li>
+                        <li>Декорирование</li>
                     </ul>
                 </div>
                 <div class="col-sm-3 col-xs-6">
@@ -103,7 +109,10 @@
                 <div class="col-sm-3 col-xs-6">
                     <p class="h1">Присоединяйтесь</p>
                     <div class="social">
-                        
+                        <i class="social-icons vk"></i>
+                        <i class="social-icons fb"></i>
+                        <i class="social-icons tw"></i>
+
                     </div>
 
                 </div>

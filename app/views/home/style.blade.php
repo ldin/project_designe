@@ -14,8 +14,8 @@
     <div class="row">
 
         @if(isset($posts)&&count($posts)>0)
+            <!--
             <div class="col-xs-12 col-sm-2" id="menu-style">
-
                 <ul class="menu-page nav nav-pills nav-stacked ">
                     @foreach($posts as $post)
                         <li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >
@@ -35,55 +35,48 @@
                         </li>
                     @endforeach
                 </ul>
-
-
-
             </div>
+            -->
         @endif
 
-        <div class="col-xs-12 col-sm-9 col-sm-offset-1">
+        <div class="col-xs-12">
 
-            @if(!empty($row->text))
+
+
+            @if(empty($row) && !empty($type->text) )
+                {{ $type->text }}
+            @elseif(empty($row))
+                <?php if(!$row){$row = $posts[0];} ?>
+            @endif
+
+            @if(!empty($row))
+                <h1>{{ $row->name  }} стиль</h1>
+                {{ HTML::image($row->image, '') }}
                 {{ $row->text }}
             @endif
 
-            @if(empty($row))
-                {{ $type->text }}
-            @endif
+        </div>
 
-            @if(isset($subcategory)&&count($subcategory)>0)
-                @foreach($subcategory as $post)
+        <div class="col-xs-12" id="tegs">
+            <ul class="">
+                @foreach($posts as $post)
+                    <li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >
+                        {{ HTML::link('/'.$type->type.'/'.$post->slug, $post->name) }}
 
-
-                    <?php $parts = preg_split('/<div style="page-break-after: always"><span style="display:none">&nbsp;<\/span><\/div>/', $post->text); ?>
-
-                    <div class="block-post row block-news">
-
-                        <div class="col-xs-9 ">
-                            <p>{{$post->name}}</p>
-                            @if(!empty($post->preview_img))
-                                {{ HTML::image($post->preview_img, '') }}
-                            @endif
-
-                            {{$post->preview}}
-                            <br>
-                            <p>{{ HTML::link($type->type.'/'.$post->slug, 'подробнее >>') }}</p>
-
-                        </div>
-                        <div class="col-xs-3 ">
-                            <p class="data-post">{{ date( 'd.m.Y', strtotime($post->created_at)); }}</p>
-                            @if(count($parts)>1)
-                                <p><a href="#" class="img-circle circle" onclick="diplay_hide('#parts-{{$post->id}}', this);return false;"><i class="glyphicon glyphicon-menu-down"></i></a></p>
-                            @endif
-                        </div>
-
-                    </div>
-                    <hr>
+                        @if(isset($posts_child)&&count($posts_child)>0)
+                            <ul>
+                                @foreach($posts_child as $post_ch)
+                                    @if(($post_ch->parent == $post->id) )
+                                        <li {{ (Request::is( $type->type.'/'.$post_ch->slug)) ? 'class="active"' : '' }}>
+                                            {{ HTML::link('/'.$type->type.'/'.$post_ch->slug, $post_ch->name) }}
+                                        </li>
+                                    @endif
+                                @endforeach
+                            </ul>
+                        @endif
+                    </li>
                 @endforeach
-
-                {{ $subcategory->links() }}
-
-            @endif
+            </ul>
         </div>
 
 

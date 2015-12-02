@@ -6,19 +6,13 @@ $( document ).ready(function() {
     var header = $('.js-header-block');
     //console.log(header.length);
     $(window).scroll(function(){
-        //console.log(header);
-        if(header.length == 0){
-            //menu.removeClass("relative").addClass("fixed");
-            //$("#main-logo").css( { marginBottom : "0", height : "50px", width:"102px"});
-            //return;
-        }
         var height = header.height();
         if ( $(this).scrollTop() > height && menu.hasClass("relative") ){
             menu.removeClass("relative").addClass("fixed");
-            $("#main-logo").css( { marginBottom : "0", height : "50px", width:"102px"  } );
+            //$("#main-logo").css( { marginBottom : "0", height : "50px", width:"102px"  } );
         } else if($(this).scrollTop() <= height && menu.hasClass("fixed")) {
             menu.removeClass("fixed").addClass("relative");
-            $("#main-logo").css( { marginBottom : "-43px", height : "82px", width:"130px" } );
+            //$("#main-logo").css( { marginBottom : "-43px", height : "82px", width:"130px" } );
         }
     });
 

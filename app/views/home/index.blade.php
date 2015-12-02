@@ -8,122 +8,179 @@
 @stop
 
 @section('slider')
+
     <div class="head js-header-block">
-        <div class="slick">
-            <div class="slide slide-0">
-                <div class="image image1"></div>
+        <div class="container">
+            <div class="logo">
+                <img src="/images/ASDlogo-w.png">
+                <p>Архитектура Строительство<br> Дизайн</p>
             </div>
-            <div class="slide slide-1">
-                <div class="image image1"></div>
-                <div class="image image2"></div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+                    <p class="h1 work">Наша работа &#8212;<br></p>
+                    <p class="h1 style"><span class="reference">Эталон</span><br> стиля</p>
+                    <hr>
+                </div>
             </div>
-            <div class="slide slide-2">
-                <div class="image image1"></div>
-                <div class="image image2"></div>
-            </div>
+            <p class="f-lighter">Проектируя глобально, остаемся внимательными к мелочам.</p>
         </div>
     </div>
 @stop
 
 @section('content')
 
+        <section id="land-page">
 
-        <section>
-            <article id="description">
-                <div class="quote">
-                    <div class="container">
-                        <div class="col-xs-12">
-                            <p class="h1">Проектируя глобально, остаемся внимательными к мелочам.<br /> Ваше время наша главная ценность.<br /> Наша работа эталон стиля.  <br /><!-- <span>Мы PMI Design</span> -->
-                            </p>
+            <article id="for-you">
+                <h2>Для Вас</h2>
+                <hr class="line">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="circle">
+                                <p><span class="big">10</span></p>
+                                <p class="desc center"><span>лет</span><br> <i>в сфере дизайна</i></p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="skin">
-                    <div class="triangle-box bottom"></div>
-                    <div class="container">
-                        <div class="col-xs-12">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4">
-                                    <img src="images/class.png" class="icon">
-                                    <h3>Почему мы</h3>
-                                    <p>
-                                        Выбирая студию дизайна, прежде всего стоит обратить особое  внимание  на то, кому Вы доверите интерьер квартиры или загородного дома, ведь от  их знаний и опыта зависит ваше дальнейшее комфортное проживание. Обратившись к нам гарантируем, строгий контроль качества, непревзойденный дизайн и массу позитивных эмоций.
-                                    </p>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <img src="images/galka.png" class="icon">
-                                    <h3>Что мы делаем</h3>
-                                    <p>
-                                        Мы успешно реализовали такие объекты как: парки, городские районы, интерьеры квартир, частные дома, офисы и бизнес-центры. У нас вы получите неповторимый дизайн и особенный индивидуальный подход.
-                                    </p>
-                                </div>
-                                <div class="col-xs-12 col-sm-4">
-                                    <img src="images/i.png" class="icon">
-                                    <h3>Зачем мы это делаем</h3>
-                                    <p>
-                                        Мы хотим помочь воплотить вашу мечту об идеальном доме в реальность. В нашей работе мы руководствуемся лишь одним принципом - гармония и креатив во всем, ведь основная наша задача сделать Вас счастливыми.
-                                    </p>
-                                </div>
-                                <div class="col-xs-12 col-sm-6">
-                                </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="circle">
+                                <p><span class="big">170</span></p>
+                                <p class="desc"> <i>реализованных</i><br> <span>работ</span></p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="circle">
+                                <p><span class="big">&#8734;</span></p>
+                                <p class="desc"><i>довольных</i><br> <span>клиентов</span></p>
                             </div>
                         </div>
                     </div>
-                    <div class="triangle-box top"></div>
+                    <div class="row text-center">
+                        <a href="#" class="btn btn-main">Позвоните нам</a>
+                    </div>
                 </div>
             </article>
+
+            <article id="description">
+                <div class="container">
+                    <h2>Что мы делаем?</h2>
+                    <hr class="line">
+                    <p class="text-center">Мы хотим помочь воплотить вашу мечту об идеальном доме в реальность.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="/images/circle-line-1.png" class="">
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="first">
+                                <p>В нашей работе мы руководствуемся лишь<br> одним принципом -</p>
+                                <p class="majestic">гармония и креатив во всем,</p>
+                            </div>
+                            <div class="second">
+                                <p>ведь основная наша задача -</p>
+                                <p class="majestic">сделать вас счастливыми!</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <img src="/images/circle-line-2.png" class="">
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
             <article id="services">
                 <div class="container">
                     <h2>Наши услуги</h2>
                     <hr class="line">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                        <!-- <p>Главное направления деятельности PMI design — это архитектурные проекты, ландшафтное проектирование и дизайн интерьеров. Для нас нет невыполнимых задач, мы знаем, как сочетать качество и креатив! В этом нам помогают интеллектуальные и технические ресурсы для выполнения задач. В наш творческий процесс входит проектирование индивидуальных жилых интерьеров и объектов городской среды. Мы успешно реализовали такие объекты как:,парки, городские районы,интерьеры квартир, частные дома, офисы и бизнес-центры. Сотрудничество с нами обеспечивает высококачественное проектирование объектов,контроль реализации проектов и оптимизацию сроков их выполнения. Наша команда состоит из  высококвалифицированных специалистов в области дизайна интерьера, архитектуры и проектирования. </p> -->
-                        <p>
-                            Проектирование индивидуальных жилых интерьеров и объектов городской среды. На  протяжение уже многих лет мы помогаем Клиентам создавать уютный и яркий дизайн в квартирах и загородных домах.
-                            Сотрудничество с нами обеспечивает качественное проектирование объектов, контроль реализации проектов и оптимизацию сроков их выполнения.
-                        </p>
-                    </div>
-                </div>
-                <div class="example">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-4 concept">
-                                <div class="image img-circle">
-                                    <img src="images/ex-concept.jpg" alt="">
-                                </div>
-                                <h3>КОНЦЕПЦИЯ / ПРОЕКТИРОВАНИЕ</h3>
-                                <p>
-                                    Дизайн-концепция самый важный шаг на пути к Вашему дизайну мечты. В концепцию входит эскизы и трехмерное изображение. Благодаря концепции структурируется общее понятие о том, каким будет реализованный проект. С помощью дизайн-концепции Вы сможете увидеть проект в целом. Иными словами концепция дизайна - это
-                                    идея Вашего будущего дизайна, как он будет выглядит в целом от расположения текста, до графики.
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-sm-4 modeling">
-                                <div class="image img-circle">
-                                    <img src="images/ex-modeling.jpg" alt="">
-                                </div>
-                                <h3>3D МОДЕЛИРОВАНИЕ  /  ВИЗУАЛИЗАЦИЯ</h3>
-                                <p>
-                                    У вас в голове зародилась мысль о том каким должен быть ваш интерьер, но не представляете, как всё это будет выглядеть? Мы поможем вам воплотить ваши идеи в жизнь. Благодаря визуальным наброскам можно разглядеть не только общую концепцию, но и реалистичный интерьер дома в деталях.
-                                </p>
-                            </div>
-                            <div class="col-xs-12 col-sm-4 support">
-                                <div class="image img-circle">
-                                    <img src="images/ex-support.jpg" alt="">
-                                </div>
-                                <h3>СОПРОВОЖДЕНИЕ  /  ДЕКОРИРОВАНИЕ</h3>
-                                <p>
-                                    Хотите красивый дизайн квартиры, но при этом нет желания тратить огромное количество средств? Сопровождение, а иными словами
-                                    авторторский надзор подразумевает контроль дизайнера за строительством, закупкой материалов и мебели, что способствует хорошей экономии. В ходе авторского надзора ведётся журнал, в котором вносятся все замечания и пожелания дизайнера.
 
-                                </p>
+                    <div class="row text-center">
+                        <div class="col-xs-12 col-sm-4 concept">
+                            <div class="image img-circle">
+                                <img src="images/ico/ico-lamp.png" alt="">
                             </div>
+                            <h3>Концепция <br> Проектирование</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 modeling">
+                            <div class="image img-circle">
+                                <img src="images/ico/ico-3d.png" alt="">
+                            </div>
+                            <h3>3D моделирование <br> Визуализация</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 support">
+                            <div class="image img-circle">
+                                <img src="images/ico/ico-uzor.png" alt="">
+                            </div>
+                            <h3>Сопровождение <br> Декорирование</h3>
                         </div>
                     </div>
                 </div>
 
             </article>
 
+            <article id="price">
+                <div class="container">
+                    <h2>Тарифы</h2>
+                    <hr class="line">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="img">
+                                <img src="/images/ico/rate-sketsh.png">
+                            </div>
+                            <h3>Эскизный</h3>
+                            <p>В тариф включено:</p>
+                            <p>
+                                Разработка прототипа
+                                Разработкка плана объекта
+                                Разработка плана в AutoCad
+                            </p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="img">
+                                <img src="/images/ico/rate-standart.png">
+                            </div>
+                            <h3>Стандарт</h3>
+                            <p>В тариф включено:</p>
+                            <p>
+                                Разработка прототипа
+                                Разработкка плана объекта
+                                Разработка плана в AutoCad
+                                2D визуализация
+                                3 цветовых решения
+                            </p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="img">
+                                <img src="/images/ico/rate-max.png">
+                            </div>
+                            <h3>Максимум</h3>
+                            <p>В тариф включено:</p>
+                            <p>
+                                Разработка прототипа
+                                Разработкка плана объекта
+                                Разработка плана в AutoCad
+                                3D визуализация
+                                5 цветовых решений
+                            </p>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="img">
+                                <img src="/images/ico/rate-maxpl.png">
+                            </div>
+                            <h3>Эскизный</h3>
+                            <p>В тариф включено:</p>
+                            <p>
+                                Разработка прототипа
+                                Разработкка плана объекта
+                                Разработка плана в AutoCad
+                                Несколько 3D визуализаций
+                                До 10 цветовых решений
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+<!--
             <article id="price">
                 <div class="container ">
                     <div class="col-sm-12 hidden-xs">
@@ -200,17 +257,15 @@
 
 
             </article>
-            <article id="contact">
+-->
+            <article id="scheme">
                 <div class="container">
                     <div class="col-xs-12">
-                        <h2>Контакты</h2>
+                        <h2>Схема работы</h2>
                         <hr class="line">
                     </div>
                 </div>
-                <!--   -->
-                <div  style="height: 300px;">
-                    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=IR7b9c81NsdU1-JXiSL3yVoUlYGWMDen&lang=ru_RU&sourceType=constructor"></script>
-                </div>
+
 
             </article>
         </section>
