@@ -35,22 +35,22 @@
                 <h2>Для Вас</h2>
                 <hr class="line">
                 <div class="container">
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
-                                <p><span class="big">10</span></p>
+                                <p class="num"><span class="big">10</span></p>
                                 <p class="desc center"><span>лет</span><br> <i>в сфере дизайна</i></p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
-                                <p><span class="big">170</span></p>
+                                <p class="num"><span class="big">170</span></p>
                                 <p class="desc"> <i>реализованных</i><br> <span>работ</span></p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
-                                <p><span class="big">&#8734;</span></p>
+                                <p class="num"><span class="big">&#8734;</span></p>
                                 <p class="desc"><i>довольных</i><br> <span>клиентов</span></p>
                             </div>
                         </div>
@@ -74,11 +74,11 @@
                         <div class="col-xs-12 col-sm-6">
                             <div class="first">
                                 <p>В нашей работе мы руководствуемся лишь<br> одним принципом -</p>
-                                <p class="majestic">гармония и креатив во всем,</p>
+                                <p class="majestic">гармония и творчество во всем,</p>
                             </div>
                             <div class="second">
                                 <p>ведь основная наша задача -</p>
-                                <p class="majestic">сделать вас счастливыми!</p>
+                                <p class="majestic">сделать Вас счастливыми!</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-3">
@@ -125,7 +125,7 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-3">
                             <div class="img">
-                                <img src="/images/ico/rate-sketsh.png">
+                                <img src="/images/ico/rate-sketsh.jpg">
                             </div>
                             <h3>Эскизный</h3>
                             <p>В тариф включено:</p>
@@ -137,7 +137,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-3">
                             <div class="img">
-                                <img src="/images/ico/rate-standart.png">
+                                <img src="/images/ico/rate-standart.jpg">
                             </div>
                             <h3>Стандарт</h3>
                             <p>В тариф включено:</p>
@@ -151,7 +151,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-3">
                             <div class="img">
-                                <img src="/images/ico/rate-max.png">
+                                <img src="/images/ico/rate-max.jpg">
                             </div>
                             <h3>Максимум</h3>
                             <p>В тариф включено:</p>
@@ -165,7 +165,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-3">
                             <div class="img">
-                                <img src="/images/ico/rate-maxpl.png">
+                                <img src="/images/ico/rate-maxpl.jpg">
                             </div>
                             <h3>Эскизный</h3>
                             <p>В тариф включено:</p>
