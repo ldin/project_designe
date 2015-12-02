@@ -9,14 +9,15 @@ Disallow: /user
 
 User-Agent: Yandex
 
+Disallow: /
 Disallow: /admin
 Disallow: /password
 Disallow: /auth
 Disallow: /user
 
-#Sitemap: http://arinchapeau.ru/sitemap.xml
+#Sitemap:
 
-Host: arinchapeau.ru
+Host:
 
 User-agent: grub-client
 Disallow: /
