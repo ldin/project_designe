@@ -71,16 +71,41 @@ hr.line:after{
   border: 2px solid @orange;
   padding: 10px 30px;
   border-radius: 0;
+  transition: 0.5s;
+}
+
+.main-ADlogo{
+  margin: auto;
+  background: url('../images/logo.png') center;
+  background-image: url('../images/logo.svg'), -khtml-linear-gradient(transparent, transparent);
+  background-image: url('../images/logo.svg'), -webkit-linear-gradient(transparent, transparent);
+  //background-image: url('../images/logo.svg'), url('../images/logo.jpg');
+  background-image: url('../images/logo.svg'), -ms-linear-gradient(transparent, transparent);
+  background-image: url('../images/logo.svg'), linear-gradient(transparent, transparent);
+  background-image: url('../images/logo.svg'), -o-linear-gradient(transparent, transparent);
+  background-repeat: no-repeat, no-repeat;
+
+  width: 400px;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+  font-size: 0;
+  color: #ffffff;
 }
 
 header {
   .head {
     height: 800px;
-    background: no-repeat url("../images/bg/bg-top1.jpg") center;
+    background: no-repeat url("../images/bg/bg-top2.jpg") center;
     background-size: cover;
     text-align: center;
     color: #ffffff;
-    .logo{font-size: 20px; margin: 70px 0 100px}
+    .logo{
+      font-size: 20px;
+      margin: 70px 0 100px;
+      span{margin-left: -36px;}
+    }
     .h1{
       font-size: 64px;
       margin-bottom: 60px;
@@ -107,10 +132,10 @@ header {
   }
 
 
-
+  .navbar-header{.main-ADlogo{max-width: 80%;}}
   .navbar .navbar-nav>li>a {color: @white; text-transform: uppercase; font-size: 16px; font-weight: 300;}
-  .navbar .navbar-toggle .icon-bar {background-color: rgba(0, 0, 0, 0.5);}
-  .navbar .navbar-toggle {border-color: rgba(0, 0, 0, 0.5);}
+  .navbar .navbar-toggle .icon-bar {background-color: @orange;}
+  .navbar .navbar-toggle {border-color: @orange;}
   .navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover { background-color: #F4EFF7;}
   .nav>li>a:focus, .nav>li>a:hover {background-color: @orange; color: @black;}
   #menu{
@@ -124,24 +149,7 @@ header {
     }
   }
 
-  .main-logo{
-    margin: auto;
-    background: url('../images/logo.png') center;
-    background-image: url('../images/logo.svg'), -khtml-linear-gradient(transparent, transparent);
-    background-image: url('../images/logo.svg'), -webkit-linear-gradient(transparent, transparent);
-    //background-image: url('../images/logo.svg'), url('../images/logo.jpg');
-    background-image: url('../images/logo.svg'), -ms-linear-gradient(transparent, transparent);
-    background-image: url('../images/logo.svg'), linear-gradient(transparent, transparent);
-    background-image: url('../images/logo.svg'), -o-linear-gradient(transparent, transparent);
-    background-repeat: no-repeat, no-repeat;
 
-    width: 400px;
-    height: 50px;
-    overflow: hidden;
-    text-indent: -9999px;
-    font-size: 0;
-    color: #ffffff;
-  }
 }
 
   #land-page{
@@ -156,7 +164,7 @@ header {
       height: 200px;
       border: solid @orange 2px;
       border-radius: 50%;
-      margin: 0 auto;
+      margin: 0 auto 10px;
     }
     span.big{
       font-size: 120px;
@@ -177,7 +185,7 @@ header {
         font-size: 36px;
       }
     }
-    .btn-main{margin: 70px 0 50px; font-size: 24px;}
+    .btn-main{margin: 70px 0 50px; font-size: 24px; }
   }
 
   #description{
@@ -240,6 +248,7 @@ header {
       color: #757575;
       font-size: 12px;
     }
+    img{max-width: 100%;}
   }
 
   #scheme{
@@ -260,6 +269,11 @@ header {
     ul{padding-left: 20px;}
   }
 
+  @media(max-width: 768px) {
+    header .head .h1 {font-size: 36px;}
+    header .head .reference {font-size: 90px;}
+    footer .h1 { font-size: 16px;}
+  }
 
   //pages
   #menu-style{

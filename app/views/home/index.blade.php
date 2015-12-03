@@ -12,8 +12,8 @@
     <div class="head js-header-block">
         <div class="container">
             <div class="logo">
-                <div class="main-logo"></div>
-                <p>профессионально модно индивидуально</p>
+                <div class="main-ADlogo"></div>
+                <p><span>профессионально модно индивидуально</span></p>
                 <!--
                 <img src="/images/ASDlogo-w.png">
                 <p>Архитектура Строительство<br> Дизайн</p>
