@@ -69,8 +69,8 @@
             <div class="row">
                 <div class="col-sm-3 col-xs-6">
                     <br>
-                    <img src="/images/ASDlogo-w.png">
-                    <p class="h1">Архитектура<br> Строительство<br> Дизайн</p>
+                    <img src="/images/ADsqlogo.png">
+                    <p class="h1">Профессионально<br> Модно<br> Индивидуально<br></p>
 
                 </div>
                 <div class="col-sm-3 col-xs-6">
