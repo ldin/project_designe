@@ -3,8 +3,6 @@
 @section('title') {{ !empty($settings['title'])?$settings['title']:'PMI designe' }} @stop
 
 @section('header')
-    <link rel="stylesheet" href="module/slick/slick.css"/>
-    <link rel="stylesheet" href="module/slick/slick-theme.css"/>
 @stop
 
 @section('slider')
@@ -277,43 +275,5 @@
 @stop
 
 @section('scripts')
-    {{ HTML::script('/module/slick/slick.min.js') }}
-
-    <script type="text/javascript">
-        $( document ).ready(function() {
-            //slider
-            $('.slide').slick({
-                dots: false,
-                arrows: false,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                cssEase: 'linear'
-            });
-
-            $('.slick').slick({
-                dots: false,
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 4000
-            });
-        });
-    </script>
-
-    {{--<script src="/js/jquery.parallax.js"></script>--}}
-    {{--<script type="text/javascript">--}}
-        {{--jQuery(document).ready(function(){--}}
-            {{--//parallax--}}
-            {{--// Declare parallax on layers--}}
-            {{--jQuery('.parallax-layer').parallax(--}}
-                {{--{ mouseport: jQuery("#slider") },            // Options--}}
-                {{--{ xparallax: '20px',    yparallax: '20px', xorigin:0.5, yorigin:0, frameDuration:1 },      // Layer 1--}}
-                {{--{ xparallax: '100px',   yparallax: '100px', xorigin:0.5, yorigin:0, frameDuration:1}     // Layer 2--}}
-            {{--);--}}
-        {{--});--}}
-    {{--</script>--}}
-    
 
 @stop
