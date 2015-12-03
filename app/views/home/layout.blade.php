@@ -40,31 +40,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#header"  id="phone-logo" class="visible-xs-block ">PMI designe</a>
+                    <a href="#header"  id="phone-logo" class="visible-xs-block ">Asafov design</a>
 
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <!--
+                        <li class="logo-menu hidden-xs">
+                            <a href="/#header" class="main-logo">Asafov design</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
                         @if(isset($type_page))
                             @foreach($type_page as$type=>$page)
                                 <li {{ (Request::is($type.'*')) ? 'class="active"' : '' }}>{{HTML::link($type, $page)}}</li>
                             @endforeach
                         @endif
-                        -->
-
-                        <li class="main-logo hidden-xs">
-                            <a href="/#header"  id="main-logo">PMI designe</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/#services">Услуги</a></li>
-                        <li><a href="/styles">Стили</a></li>
-                        <li><a href="/styles">Стоимость</a></li>
-                        <li><a href="/#news">Новости</a></li>
-                        <li><a href="/#contact">Контакты</a></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->

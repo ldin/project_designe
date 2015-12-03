@@ -12,8 +12,11 @@
     <div class="head js-header-block">
         <div class="container">
             <div class="logo">
+                <div class="main-logo"></div>
+                <!--
                 <img src="/images/ASDlogo-w.png">
                 <p>Архитектура Строительство<br> Дизайн</p>
+                -->
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
@@ -97,19 +100,19 @@
                     <div class="row text-center">
                         <div class="col-xs-12 col-sm-4 concept">
                             <div class="image img-circle">
-                                <img src="images/ico/ico-lamp.png" alt="">
+                                <!--<img src="images/ico/ico-lamp.png" alt="">-->
                             </div>
                             <h3>Концепция <br> Проектирование</h3>
                         </div>
                         <div class="col-xs-12 col-sm-4 modeling">
                             <div class="image img-circle">
-                                <img src="images/ico/ico-3d.png" alt="">
+                                <!--<img src="images/ico/ico-3d.png" alt="">-->
                             </div>
                             <h3>3D моделирование <br> Визуализация</h3>
                         </div>
                         <div class="col-xs-12 col-sm-4 support">
                             <div class="image img-circle">
-                                <img src="images/ico/ico-uzor.png" alt="">
+                                <!--<img src="images/ico/ico-uzor.png" alt="">-->
                             </div>
                             <h3>Сопровождение <br> Декорирование</h3>
                         </div>
