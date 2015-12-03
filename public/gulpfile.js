@@ -5,9 +5,9 @@ var less = require('gulp-less');
 var minifyCSS = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
+var sourcemaps = require('gulp-sourcemaps');
 
 var rigger = require('gulp-rigger');
-var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 
 //все нужные нам пути, чтобы при необходимости легко в одном месте их редактировать
@@ -33,8 +33,10 @@ var path = {
 gulp.task('css', function() {
  return gulp.src(path.src.less)// Собираем less-файлы из папки less
   .pipe(less()) // Компилируем в CSS, конкатенируем и сжимаем
-  .pipe(autoprefixer({browsers: ['last 3 versions']}))
+  .pipe(sourcemaps.init())
+  .pipe(autoprefixer())
   .pipe(concat('main.min.css'))
+  .pipe(sourcemaps.write('.'))
   .pipe(minifyCSS())
   .pipe(gulp.dest(path.build.css));// Складываем в папку css
 });
