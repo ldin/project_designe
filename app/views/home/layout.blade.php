@@ -89,8 +89,11 @@
                     <p>
                         Мы находимся по адресу:<br />
                         Наб. Реки Мойки 7 <br /><br />
-                        Телефон: <a href="tel:+78126490404">+7 812 649 04 04</a> <br /><br />
-                        E-mail: <a href="mailto:info@pmi.design">info@pmi.design</a>
+                        Телефон:
+                        <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}"><i class="picto picto-phone"></i><span> {{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</span></a> <br />
+                        E-mail:
+                        <a href="mailto:{{ !empty($settings['email_head'])?$settings['email_head']:'' }}"><i class="picto picto-mail"></i><span> {{ !empty($settings['email_head'])?$settings['email_head']:'' }}</span></a>
+
                     </p>
                 </div>
                 <div class="col-sm-3 col-xs-6">

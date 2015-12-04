@@ -25,6 +25,9 @@
                 </div>
             </div>
             <p class="f-lighter">Проектируя глобально, остаемся внимательными к мелочам.</p>
+            <p class="phone">
+                <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">{{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</a>
+            </p>
         </div>
     </div>
 @stop
@@ -52,13 +55,16 @@
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
-                                <p class="num"><span class="big">&#8734;</span></p>
+                                <p class="num"><span class="big"><img src="/images/ico/infinity.png" ></span></p>
                                 <p class="desc"><i>довольных</i><br> <span>клиентов</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="row text-center">
-                        <a href="#" class="btn btn-main">Позвоните нам</a>
+                        <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}"
+                           data-descr="{{!empty($settings['phone_head'])?preg_replace('/[^0-9-+()]/', '', $settings['phone_head']):''}}"
+                           class="btn btn-main">Позвоните нам</a>
+
                     </div>
                 </div>
             </article>

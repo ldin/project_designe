@@ -104,7 +104,7 @@ header {
     .logo{
       font-size: 20px;
       margin: 70px 0 100px;
-      span{margin-left: -36px;}
+      span{margin-left: -36px; font-weight: 100}
       .main-ADlogo{max-width: 100%}
     }
     .h1{
@@ -129,6 +129,14 @@ header {
     hr{
       width: 280px;
       margin-bottom: 50px;
+    }
+    .phone{
+      a{
+        color: @orange;
+        font-size: 50px;
+        span{font-size: 26px;}
+      }
+      a:hover{text-decoration: none;}
     }
   }
 
@@ -159,13 +167,13 @@ header {
 
   #for-you{
     font-size: 30px;
-    line-height: 30px;
     .circle{
       width: 200px;
       height: 200px;
       border: solid @orange 2px;
       border-radius: 50%;
       margin: 0 auto 10px;
+      line-height: 30px;
     }
     span.big{
       font-size: 120px;
@@ -186,7 +194,21 @@ header {
         font-size: 36px;
       }
     }
-    .btn-main{margin: 70px 0 50px; font-size: 24px; }
+    .btn-main {
+      margin: 70px 0 50px;
+      font-size: 24px;
+      position: relative;
+      transition: 1s;
+      &:hover:after {
+        content: attr(data-descr);
+        display: block;
+        background: @white;
+        color: #333;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+      }
+    }
   }
 
   #description{
@@ -290,7 +312,7 @@ header {
         display: inline-block;
         position: relative;
         padding: 0 10px;
-        left:-80px;
+        left:-76px;
         top: 30px;
       }
 
@@ -299,7 +321,7 @@ header {
       width: 110px;
       text-align: center;
       font-weight: bold;
-      &:not(:first-of-type){margin-left: 60px;}
+      &:not(:first-of-type){margin-left: 50px;}
     }
 
 
@@ -321,7 +343,8 @@ header {
   @media(max-width: 768px) {
     header .head .h1 {font-size: 36px;}
     header .head .reference {font-size: 90px;}
-    #scheme .block{margin-left: 60px;}
+    header .head .logo span {margin-left: 0;}
+    #scheme .block{margin-left: 50px;}
     footer .h1 { font-size: 16px;}
 
   }
