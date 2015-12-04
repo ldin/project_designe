@@ -124,7 +124,7 @@
                 <div class="container">
                     <h2>Тарифы</h2>
                     <hr class="line">
-                    <div class="row">
+                    <div class="row text-center">
                         <div class="col-xs-6 col-sm-3">
                             <div class="img">
                                 <img src="/images/ico/rate-sketsh.jpg">
@@ -169,7 +169,7 @@
                             <div class="img">
                                 <img src="/images/ico/rate-maxpl.jpg">
                             </div>
-                            <h3>Эскизный</h3>
+                            <h3>Максимум +</h3>
                             <p>В тариф включено:</p>
                             <p>
                                 Разработка прототипа<br>
@@ -265,35 +265,37 @@
                     <div class="col-xs-12">
                         <h2>Схема работы</h2>
                         <hr class="line">
-                        <div class="row">
-                            <div class=" block left">
-                                <div class="circle phone"></div>
-                                <p>Звонок</p>
-                            </div>
-                            <div class="block left">
-                                <div class="circle meet"></div>
-                                <p>Встреча</p>
-                            </div>
-                            <div class="block left">
-                                <div class="circle line"></div>
-                                <p>Замеры</p>
-                            </div>
-                            <div class="block left">
-                                <div class="circle sketch"></div>
-                                <p>Эскизы</p>
-                            </div>
-                            <div class="block left">
-                                <div class="circle match"></div>
-                                <p>Согласование</p>
-                            </div>
-                            <div class="block left">
-                                <div class="circle comp"></div>
-                                <p>Работа над<br> проектом</p>
-                            </div>
-                            <div class="block left">
-                                <div class="circle escort"></div>
-                                <p>Сопровождение</p>
-                            </div>
+                        <div class="row text-center">
+                            <ul>
+                                <li class="block">
+                                    <div class="circle phone"></div>
+                                    <p>Звонок</p>
+                                </li>
+                                <li class="block">
+                                    <div class="circle meet"></div>
+                                    <p>Встреча</p>
+                                </li>
+                                <li class="block">
+                                    <div class="circle line"></div>
+                                    <p>Замеры</p>
+                                </li>
+                                <li class="block">
+                                    <div class="circle sketch"></div>
+                                    <p>Эскизы</p>
+                                </li>
+                                <li class="block">
+                                    <div class="circle match"></div>
+                                    <p>Согласование</p>
+                                </li>
+                                <li class="block">
+                                    <div class="circle comp"></div>
+                                    <p>Работа над<br> проектом</p>
+                                </li>
+                                <li class="block">
+                                    <div class="circle escort"></div>
+                                    <p>Сопровождение</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

@@ -256,6 +256,17 @@ header {
     background: @gray;
     padding-bottom: 70px;
     hr.line:after{ background: @gray;}
+
+    ul, ul li{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul li{
+      display: inline-block;
+      vertical-align: top;
+    }
+
     .circle{
       width: 110px;
       height: 110px;
@@ -272,7 +283,7 @@ header {
       &.escort{background-image: url("../images/ico/work-plus.png")}
 
       &:before{
-        content: "\2022 \2022 \2022";
+        content: "\2022 ";
         letter-spacing: 10px;
         color: #ff9000;
         font-size: 36px;
@@ -282,7 +293,7 @@ header {
         left:-80px;
         top: 30px;
       }
-      &.phone:before{content: none;}
+
     }
     .block{
       width: 110px;
@@ -310,7 +321,12 @@ header {
   @media(max-width: 768px) {
     header .head .h1 {font-size: 36px;}
     header .head .reference {font-size: 90px;}
+    #scheme .block{margin-left: 60px;}
     footer .h1 { font-size: 16px;}
+
+  }
+  @media(min-width: 768px) {
+    #scheme .circle.phone:before{content: none;}
   }
 
   //pages
