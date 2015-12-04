@@ -265,6 +265,36 @@
                     <div class="col-xs-12">
                         <h2>Схема работы</h2>
                         <hr class="line">
+                        <div class="row">
+                            <div class=" block left">
+                                <div class="circle phone"></div>
+                                <p>Звонок</p>
+                            </div>
+                            <div class="block left">
+                                <div class="circle meet"></div>
+                                <p>Встреча</p>
+                            </div>
+                            <div class="block left">
+                                <div class="circle line"></div>
+                                <p>Замеры</p>
+                            </div>
+                            <div class="block left">
+                                <div class="circle sketch"></div>
+                                <p>Эскизы</p>
+                            </div>
+                            <div class="block left">
+                                <div class="circle match"></div>
+                                <p>Согласование</p>
+                            </div>
+                            <div class="block left">
+                                <div class="circle comp"></div>
+                                <p>Работа над<br> проектом</p>
+                            </div>
+                            <div class="block left">
+                                <div class="circle escort"></div>
+                                <p>Сопровождение</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

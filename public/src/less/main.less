@@ -254,7 +254,44 @@ header {
 
   #scheme{
     background: @gray;
+    padding-bottom: 70px;
     hr.line:after{ background: @gray;}
+    .circle{
+      width: 110px;
+      height: 110px;
+      margin-bottom: 10px;
+      border: 2px solid @orange;
+      border-radius: 50%;
+      background: no-repeat center;
+      &.phone{background-image: url("../images/ico/work-tel.png")}
+      &.meet{background-image: url("../images/ico/work-hand.png")}
+      &.line{background-image: url("../images/ico/work-line.png")}
+      &.sketch{background-image: url("../images/ico/work-hatch.png")}
+      &.match{background-image: url("../images/ico/work-yes.png")}
+      &.comp{background-image: url("../images/ico/work-comp.png")}
+      &.escort{background-image: url("../images/ico/work-plus.png")}
+
+      &:before{
+        content: "\2022 \2022 \2022";
+        letter-spacing: 10px;
+        color: #ff9000;
+        font-size: 36px;
+        display: inline-block;
+        position: relative;
+        padding: 0 10px;
+        left:-80px;
+        top: 30px;
+      }
+      &.phone:before{content: none;}
+    }
+    .block{
+      width: 110px;
+      text-align: center;
+      font-weight: bold;
+      &:not(:first-of-type){margin-left: 60px;}
+    }
+
+
   }
 
   footer{
