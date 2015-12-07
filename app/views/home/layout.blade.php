@@ -16,8 +16,8 @@
 
     @yield('header')
 
-     <link href="/css/main.min.css?01" rel="stylesheet">
-
+     <link href="/css/main.css?01" rel="stylesheet">
+     <link href="/css/main.css?01" rel="stylesheet">
  </head>
 
 <body>

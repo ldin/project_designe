@@ -128,20 +128,20 @@ header {
     }
     hr{
       width: 280px;
-      margin-bottom: 50px;
+      margin: 35px auto;
     }
     .phone{
       a{
-        color: @orange;
-        font-size: 50px;
-        span{font-size: 26px;}
+        color: @white;
+        font-size: 48px;
+        font-weight: normal;
+        span{font-size: 32px;}
       }
       a:hover{text-decoration: none;}
     }
   }
 
 
-  .navbar-header{.main-ADlogo{max-width: 80%;}}
   .navbar .navbar-nav>li>a {color: @white; text-transform: uppercase; font-size: 16px; font-weight: 300;}
   .navbar .navbar-toggle .icon-bar {background-color: @orange;}
   .navbar .navbar-toggle {border-color: @orange;}
@@ -151,9 +151,8 @@ header {
     background: @black;
     &.relative{position: relative;}
     &.fixed{position: fixed; top: 0; width: 100%; height: 50px; z-index: 1;}
-    .logo-menu{
-      margin: 4px 0 -4px;
-      a{max-width: 100%;}
+    .main-ADlogo{
+      width: 250px;
       a:hover{background-color: transparent;}
     }
   }
@@ -219,7 +218,7 @@ header {
     img{max-width: 100%;}
     .majestic{
       color: @orange;
-      text-align: right;
+      margin-left: 100px;
       line-height: 20px;
     }
     p{
@@ -252,9 +251,6 @@ header {
       background: no-repeat center;
       transition: all 2s;
     }
-    //.concept .image img{margin-top: 50px;}
-    //.modeling .image img{margin-top: 60px;}
-    //.support .image img{margin-top: 40px;}
 
     .concept .image{background-image: url("../images/ico/ico-lamp.png");}
     .modeling .image {background-image: url("../images/ico/ico-3d.png");}
@@ -341,9 +337,10 @@ header {
   }
 
   @media(max-width: 768px) {
-    header .head .h1 {font-size: 36px;}
+    header .head .h1, header, header .head .h1.style, header .head .h1.work {font-size: 36px; text-align: center;}
     header .head .reference {font-size: 90px;}
     header .head .logo span {margin-left: 0;}
+    header .head .phone a{font-size: 32px; span{font-size: 22px;}}
     #scheme .block{margin-left: 50px;}
     footer .h1 { font-size: 16px;}
 

@@ -34,8 +34,8 @@ gulp.task('css', function() {
  return gulp.src(path.src.less)// Собираем less-файлы из папки less
   .pipe(less()) // Компилируем в CSS, конкатенируем и сжимаем
   .pipe(sourcemaps.init())
-  .pipe(autoprefixer())
-  .pipe(concat('main.min.css'))
+  .pipe(autoprefixer({browsers: ['last 5 versions']}))
+  //.pipe(concat('main.min.css'))
   .pipe(sourcemaps.write('.'))
   .pipe(minifyCSS())
   .pipe(gulp.dest(path.build.css));// Складываем в папку css
@@ -68,4 +68,4 @@ gulp.task('watch', function() {
    gulp.watch(path.src.js, ['script']);
 });
 
-gulp.task('default',['css', 'image','script', 'watch']);
+gulp.task('default',['css', /*'image',*/'script', 'watch']);

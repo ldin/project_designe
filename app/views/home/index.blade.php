@@ -21,10 +21,11 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
                     <p class="h1 work">Наша работа &#8212;<br></p>
                     <p class="h1 style"><span class="reference">Эталон</span><br> стиля</p>
-                    <hr>
                 </div>
             </div>
+            <hr>
             <p class="f-lighter">Проектируя глобально, остаемся внимательными к мелочам.</p>
+            <hr>
             <p class="phone">
                 <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">{{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</a>
             </p>
@@ -76,7 +77,7 @@
                     <p class="text-center">Мы хотим помочь воплотить вашу мечту об идеальном доме в реальность.</p>
                     <br>
                     <div class="row">
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-xs-12 col-sm-3 text-center">
                             <img src="/images/circle-line-1.png" class="">
                         </div>
                         <div class="col-xs-12 col-sm-6">
@@ -89,7 +90,7 @@
                                 <p class="majestic">сделать Вас счастливыми!</p>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-3">
+                        <div class="col-xs-12 col-sm-3 text-center">
                             <img src="/images/circle-line-2.png" class="">
                         </div>
 
