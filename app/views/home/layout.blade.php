@@ -67,13 +67,12 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-xs-6">
-                    <br>
-                    <img src="/images/ADsqlogo.png">
-                    <p class="h1">Профессионально<br> Модно<br> Индивидуально<br></p>
-
+                <div class="col-sm-4 col-xs-12 logo">
+                    <!--<img src="/images/ADsqlogo.png">-->
+                    <div class="main-ADlogo"></div>
+                    <p>Профессионально Модно Индивидуально</p>
                 </div>
-                <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-3 col-xs-12">
                     <p class="h1">Наши услуги</p>
                     <ul>
                         <li>Концепция </li>
@@ -84,7 +83,7 @@
                         <li>Декорирование</li>
                     </ul>
                 </div>
-                <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-3 col-xs-12">
                     <p class="h1">Контакты</p>
                     <p>
                         Мы находимся по адресу:<br />
@@ -96,7 +95,7 @@
 
                     </p>
                 </div>
-                <div class="col-sm-3 col-xs-6">
+                <div class="col-sm-2 col-xs-12">
                     <p class="h1">Присоединяйтесь</p>
                     <div class="social">
                         <i class="social-icons vk"></i>
