@@ -38,7 +38,7 @@
             </div>
         @endif
 
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="col-xs-12 col-sm-6 {{ (isset($posts)&&count($posts)>0)?"col-sm-offset-3":""  }} ">
 
 
             @if(!empty($row->text))

@@ -73,8 +73,8 @@ class HomeController extends BaseController {
         else{
             
             $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('created_at', 'desc')->get();
-            
             $posts_child = Post::where('type_id',$type_post->id)->where('status',1)->where('parent', '!=',0)->orderBy('created_at', 'desc')->get();
+
 
             if($slug!=''){
                 $row = Post::where('slug',$slug)->first();
