@@ -3,6 +3,7 @@
 @section('title') {{ !empty($settings['title'])?$settings['title']:'PMI designe' }} @stop
 
 @section('header')
+    <link href="/css/animation-main.css?01" rel="stylesheet">
 @stop
 
 @section('slider')
@@ -44,18 +45,21 @@
                     <div class="row text-center">
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
+                                <div class="dot dot-1"></div>
                                 <p class="num"><span class="big">10</span></p>
                                 <p class="desc center"><span>лет</span><br> <i>в сфере дизайна</i></p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
+                                <div class="dot dot-2"></div>
                                 <p class="num"><span class="big">170</span></p>
                                 <p class="desc"> <i>реализованных</i><br> <span>работ</span></p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
+                                <div class="dot dot-3"></div>
                                 <p class="num"><span class="big"><img src="/images/ico/infinity.png" ></span></p>
                                 <p class="desc"><i>довольных</i><br> <span>клиентов</span></p>
                             </div>
