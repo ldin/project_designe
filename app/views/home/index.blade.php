@@ -110,19 +110,19 @@
                     <div class="row text-center">
                         <div class="col-xs-12 col-sm-4 concept">
                             <div class="image img-circle">
-                                <!--<img src="images/ico/ico-lamp.png" alt="">-->
+                                <div class="dot dot-1"></div>
                             </div>
                             <h3>Концепция <br> Проектирование</h3>
                         </div>
                         <div class="col-xs-12 col-sm-4 modeling">
                             <div class="image img-circle">
-                                <!--<img src="images/ico/ico-3d.png" alt="">-->
+                                <div class="dot dot-2"></div>
                             </div>
                             <h3>3D моделирование <br> Визуализация</h3>
                         </div>
                         <div class="col-xs-12 col-sm-4 support">
                             <div class="image img-circle">
-                                <!--<img src="images/ico/ico-uzor.png" alt="">-->
+                                <div class="dot dot-3"></div>
                             </div>
                             <h3>Сопровождение <br> Декорирование</h3>
                         </div>
