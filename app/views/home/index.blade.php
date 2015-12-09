@@ -279,31 +279,31 @@
                         <div class="row text-center">
                             <ul>
                                 <li class="block">
-                                    <div class="circle phone"></div>
+                                    <div class="circle scheme-work phone"></div>
                                     <p>Звонок</p>
                                 </li>
                                 <li class="block">
-                                    <div class="circle meet"></div>
+                                    <div class="circle scheme-work meet"></div>
                                     <p>Встреча</p>
                                 </li>
                                 <li class="block">
-                                    <div class="circle line"></div>
+                                    <div class="circle scheme-work line"></div>
                                     <p>Замеры</p>
                                 </li>
                                 <li class="block">
-                                    <div class="circle sketch"></div>
+                                    <div class="circle scheme-work sketch"></div>
                                     <p>Эскизы</p>
                                 </li>
                                 <li class="block">
-                                    <div class="circle match"></div>
+                                    <div class="circle scheme-work match"></div>
                                     <p>Согласование</p>
                                 </li>
                                 <li class="block">
-                                    <div class="circle comp"></div>
+                                    <div class="circle scheme-work comp"></div>
                                     <p>Работа над<br> проектом</p>
                                 </li>
                                 <li class="block">
-                                    <div class="circle escort"></div>
+                                    <div class="circle scheme-work escort"></div>
                                     <p>Сопровождение</p>
                                 </li>
                             </ul>
