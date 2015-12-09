@@ -11,7 +11,7 @@
     <div class="row">
 
         @if(isset($posts)&&count($posts)>0)
-            <div class="col-xs-12 col-sm-2">
+            <div id="page-menu" class="col-xs-12 col-lg-2 col-md-3">
 
                 <p class="nav-title {{ (Request::is( $type->type)) ? 'active' : '' }}">
                     {{ HTML::link($type->type, $type->name ) }}
@@ -40,7 +40,7 @@
             </div>
         @endif
 
-        <div class="col-xs-12 col-sm-8 {{ (isset($posts)&&count($posts)>0)?"col-sm-offset-1":""  }} ">
+        <div class="col-xs-12 col-sm-8 {{ (isset($posts)&&count($posts)>0)?"col-lg-offset-1":""  }} ">
 
 
             @if(!empty($row->text))
