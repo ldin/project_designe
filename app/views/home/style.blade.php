@@ -69,14 +69,14 @@
             <ul class="">
                 @foreach($posts as $post)
                     <li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >
-                        {{ HTML::link('/'.$type->type.'/'.$post->slug, $post->name) }}
+                        {{ HTML::link('/'.$type->type.'/'.$post->slug, '#'.$post->name) }}
 
                         @if(isset($posts_child)&&count($posts_child)>0)
                             <ul>
                                 @foreach($posts_child as $post_ch)
                                     @if(($post_ch->parent == $post->id) )
                                         <li {{ (Request::is( $type->type.'/'.$post_ch->slug)) ? 'class="active"' : '' }}>
-                                            {{ HTML::link('/'.$type->type.'/'.$post_ch->slug, $post_ch->name) }}
+                                           {{ HTML::link('/'.$type->type.'/'.$post_ch->slug, $post_ch->name) }}
                                         </li>
                                     @endif
                                 @endforeach
