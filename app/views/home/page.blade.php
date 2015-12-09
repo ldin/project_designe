@@ -13,6 +13,10 @@
         @if(isset($posts)&&count($posts)>0)
             <div class="col-xs-12 col-sm-2">
 
+                <p class="nav-title {{ (Request::is( $type->type)) ? 'active' : '' }}">
+                    {{ HTML::link($type->type, $type->name ) }}
+                </p>
+
                 <ul class="menu-page nav nav-pills nav-stacked ">
                     @foreach($posts as $post)
                         <li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >

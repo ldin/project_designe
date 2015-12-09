@@ -403,6 +403,24 @@ header {
   }
 
   #content{
+    .nav-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 1px solid #ff9000;
+      border-top: 1px solid #ff9000;
+      a{
+        color: @black;
+        text-transform: uppercase;
+
+      }
+      a:hover{text-decoration: none;}
+      &.active {
+        background: @orange;
+        a{color: @white;}
+      }
+
+    }
     .nav-pills > li > a{
       color: @black;
       border-radius: 0;
