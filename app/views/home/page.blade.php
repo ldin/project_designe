@@ -11,7 +11,7 @@
     <div class="row">
 
         @if(isset($posts)&&count($posts)>0)
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-2">
 
                 <ul class="menu-page nav nav-pills nav-stacked ">
                     @foreach($posts as $post)
@@ -33,12 +33,10 @@
                     @endforeach
                 </ul>
 
-
-
             </div>
         @endif
 
-        <div class="col-xs-12 col-sm-6 {{ (isset($posts)&&count($posts)>0)?"col-sm-offset-3":""  }} ">
+        <div class="col-xs-12 col-sm-8 {{ (isset($posts)&&count($posts)>0)?"col-sm-offset-1":""  }} ">
 
 
             @if(!empty($row->text))
