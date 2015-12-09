@@ -51,8 +51,16 @@
 
             @if(!empty($row))
                 <h1>{{ $row->name  }} стиль</h1>
-                {{ HTML::image($row->image, '') }}
-                {{ $row->text }}
+                @if(!empty($row->image))
+                    {{ HTML::image($row->image, '') }}
+                    {{ $row->text }}
+                @else
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                        {{ $row->text }}
+                    </div>
+
+                @endif
+
             @endif
 
         </div>
