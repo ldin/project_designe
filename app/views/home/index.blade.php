@@ -28,7 +28,7 @@
             <p class="f-lighter">Проектируя глобально, остаемся внимательными к мелочам.</p>
             <hr>
             <p class="phone">
-                <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">{{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</a>
+                <a href="tel:{{!empty($settings['phone_head'])?'+7'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">{{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</a>
             </p>
         </div>
     </div>
@@ -66,10 +66,9 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}"
-                           data-descr="{{!empty($settings['phone_head'])?preg_replace('/[^0-9-+()]/', '', $settings['phone_head']):''}}"
-                           class="btn btn-main">Позвоните нам</a>
-
+                        <a href="tel:{{!empty($settings['phone_head'])?'+7'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}"
+                           data-descr="{{!empty($settings['phone_head'])?preg_replace('/[^0-9-+( )]/', '', $settings['phone_head']):''}}"
+                           class="btn btn-main btn-main-tel">Позвоните нам</a>
                     </div>
                 </div>
             </article>
@@ -196,7 +195,9 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <a href="/price" class="btn btn-main">Тарифы</a>
+                        <a href="tel:{{!empty($settings['phone_head'])?'+7'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}"
+                           data-descr="{{!empty($settings['phone_head'])?preg_replace('/[^0-9-+( )]/', '', $settings['phone_head']):''}}"
+                           class="btn btn-main btn-main-tel">Позвоните нам</a>
                     </div>
                 </div>
             </article>

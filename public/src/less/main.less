@@ -79,6 +79,23 @@ hr.line:after{
   transition: 0.5s;
 }
 
+.btn-main.btn-main-tel {
+  margin: 70px 0 50px;
+
+  position: relative;
+  transition: 1s;
+  &:hover:after {
+    content: attr(data-descr);
+    display: block;
+    background: @white;
+    color: #333;
+    padding: 0 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+}
+
 .main-ADlogo{
   margin: auto;
   background: url('../images/logo.png') center;
@@ -200,20 +217,7 @@ header {
         font-size: 36px;
       }
     }
-    .btn-main {
-      margin: 70px 0 50px;
-      position: relative;
-      transition: 1s;
-      &:hover:after {
-        content: attr(data-descr);
-        display: block;
-        background: @white;
-        color: #333;
-        position: absolute;
-        top: 10px;
-        left: 20px;
-      }
-    }
+
   }
 
   #description{
@@ -268,10 +272,14 @@ header {
   }
 
   #price{
-    padding-bottom: 50px;
     p{
       color: #757575;
       font-size: 12px;
+    }
+    h3{margin-top: 10px}
+    .price{
+      font-size: 18px;
+      margin: 10px 0 0;
     }
     img{max-width: 100%;}
   }
