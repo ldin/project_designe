@@ -140,6 +140,7 @@
                             <div class="img">
                                 <img src="/images/ico/rate-sketsh.jpg">
                             </div>
+                            <p class="price">от 600 р/м.кв</p>
                             <h3>Эскизный</h3>
                             <p>В тариф включено:</p>
                             <p>
@@ -152,6 +153,7 @@
                             <div class="img">
                                 <img src="/images/ico/rate-standart.jpg">
                             </div>
+                            <p class="price">от 1000 р/м.кв</p>
                             <h3>Стандарт</h3>
                             <p>В тариф включено:</p>
                             <p>
@@ -166,6 +168,7 @@
                             <div class="img">
                                 <img src="/images/ico/rate-max.jpg">
                             </div>
+                            <p class="price">от 1500 р/м.кв</p>
                             <h3>Максимум</h3>
                             <p>В тариф включено:</p>
                             <p>
@@ -180,6 +183,7 @@
                             <div class="img">
                                 <img src="/images/ico/rate-maxpl.jpg">
                             </div>
+                            <p class="price">от 3000 р/м.кв</p>
                             <h3>Максимум +</h3>
                             <p>В тариф включено:</p>
                             <p>
@@ -190,6 +194,9 @@
                                 До 10 цветовых решений<br>
                             </p>
                         </div>
+                    </div>
+                    <div class="row text-center">
+                        <a href="/price" class="btn btn-main">Тарифы</a>
                     </div>
                 </div>
             </article>
