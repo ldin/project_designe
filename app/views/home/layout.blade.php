@@ -34,7 +34,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a href="/#header" class="main-ADlogo">Asafov design</a>
+                            <a href="/" class="main-ADlogo">Asafov design</a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -100,8 +100,8 @@
                     </div>
                 </div>
                 <div class="col-sm-2 col-xs-12">
-                    <p class="h1">Присоединяйтесь</p>
-                    <div class="social">
+                    <p class="h1 text-center">Присоединяйтесь</p>
+                    <div class="social text-center">
                         <a href="https://vk.com/asafovdesign" target="_blank"><i class="social-icons vk"></i></a>
                         <!--
                         <i class="social-icons fb"></i>

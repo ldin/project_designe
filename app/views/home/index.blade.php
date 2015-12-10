@@ -38,8 +38,22 @@
 
         <section id="land-page">
 
+             <article id="action">
+
+            <h1 class="red">Акция!</h1>
+                 <div class="hidden-xs">
+            <h2><small>Успейте, до конца осталось:</small> </h2>
+
+                 <script type="text/javascript" src="http://www.timegenerator.ru/s/e02721a96c6d91e4b924e5a899394e58.js"></script>
+                 </div>
+            <h2><small>Дизайн</small> <span class="red">1/5</span> <small>квартиры</small> <span class="red">БЕСПЛАТНО!</span> </h2>
+
+            </article>
+
             <article id="for-you">
+                <!--
                 <h2>Для Вас</h2>
+                -->
                 <hr class="line">
                 <div class="container">
                     <div class="row text-center">
@@ -142,62 +156,70 @@
                     <hr class="line">
                     <div class="row text-center">
                         <div class="col-xs-6 col-sm-3">
-                            <div class="img">
-                                <img src="/images/ico/rate-sketsh.jpg">
-                            </div>
-                            <p class="price">от 600 р/м.кв</p>
-                            <h3>Эскизный</h3>
-                            <p>В тариф включено:</p>
-                            <p>
-                                Разработка прототипа<br>
-                                Разработкка плана объекта<br>
-                                Разработка плана в AutoCad<br>
-                            </p>
+                            <a href="/price">
+                                <div class="img">
+                                    <img src="/images/ico/rate-sketsh.jpg">
+                                </div>
+                                <p class="price">от 600 р/м.кв</p>
+                                <h3>Эскизный</h3>
+                                <p>В тариф включено:</p>
+                                <p>
+                                    Разработка прототипа<br>
+                                    Разработкка плана объекта<br>
+                                    Разработка плана в AutoCad<br>
+                                </p>
+                            </a>
                         </div>
                         <div class="col-xs-6 col-sm-3">
-                            <div class="img">
-                                <img src="/images/ico/rate-standart.jpg">
-                            </div>
-                            <p class="price">от 1000 р/м.кв</p>
-                            <h3>Стандарт</h3>
-                            <p>В тариф включено:</p>
-                            <p>
-                                Разработка прототипа<br>
-                                Разработкка плана объекта<br>
-                                Разработка плана в AutoCad<br>
-                                2D визуализация<br>
-                                3 цветовых решения<br>
-                            </p>
+                            <a href="/price">
+                                <div class="img">
+                                    <img src="/images/ico/rate-standart.jpg">
+                                </div>
+                                <p class="price">от 1000 р/м.кв</p>
+                                <h3>Стандарт</h3>
+                                <p>В тариф включено:</p>
+                                <p>
+                                    Разработка прототипа<br>
+                                    Разработкка плана объекта<br>
+                                    Разработка плана в AutoCad<br>
+                                    2D визуализация<br>
+                                    3 цветовых решения<br>
+                                </p>
+                            </a>
                         </div>
                         <div class="col-xs-6 col-sm-3">
-                            <div class="img">
-                                <img src="/images/ico/rate-max.jpg">
-                            </div>
-                            <p class="price">от 1500 р/м.кв</p>
-                            <h3>Максимум</h3>
-                            <p>В тариф включено:</p>
-                            <p>
-                                Разработка прототипа<br>
-                                Разработкка плана объекта<br>
-                                Разработка плана в AutoCad<br>
-                                3D визуализация<br>
-                                5 цветовых решений<br>
-                            </p>
+                            <a href="/price">
+                                <div class="img">
+                                    <img src="/images/ico/rate-max.jpg">
+                                </div>
+                                <p class="price">от 1500 р/м.кв</p>
+                                <h3>Максимум</h3>
+                                <p>В тариф включено:</p>
+                                <p>
+                                    Разработка прототипа<br>
+                                    Разработкка плана объекта<br>
+                                    Разработка плана в AutoCad<br>
+                                    3D визуализация<br>
+                                    5 цветовых решений<br>
+                                </p>
+                            </a>
                         </div>
                         <div class="col-xs-6 col-sm-3">
-                            <div class="img">
-                                <img src="/images/ico/rate-maxpl.jpg">
-                            </div>
-                            <p class="price">от 3000 р/м.кв</p>
-                            <h3>Максимум +</h3>
-                            <p>В тариф включено:</p>
-                            <p>
-                                Разработка прототипа<br>
-                                Разработкка плана объекта<br>
-                                Разработка плана в AutoCad<br>
-                                Несколько 3D визуализаций<br>
-                                До 10 цветовых решений<br>
-                            </p>
+                            <a href="/price">
+                                <div class="img">
+                                    <img src="/images/ico/rate-maxpl.jpg">
+                                </div>
+                                <p class="price">от 3000 р/м.кв</p>
+                                <h3>Максимум +</h3>
+                                <p>В тариф включено:</p>
+                                <p>
+                                    Разработка прототипа<br>
+                                    Разработкка плана объекта<br>
+                                    Разработка плана в AutoCad<br>
+                                    Несколько 3D визуализаций<br>
+                                    До 10 цветовых решений<br>
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="row text-center">
