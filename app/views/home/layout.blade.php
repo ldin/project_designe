@@ -78,23 +78,33 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 col-xs-12">
-                    <p class="h1">Контакты</p>
-                    <p>
-                        Мы находимся по адресу:<br />
-                        Наб. Реки Мойки 7 <br /><br />
-                        Телефон:
-                        <a href="tel:{{!empty($settings['phone_head'])?'+7'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}"><i class="picto picto-phone"></i><span> {{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</span></a> <br />
-                        E-mail:
-                        <a href="mailto:{{ !empty($settings['email_head'])?$settings['email_head']:'' }}"><i class="picto picto-mail"></i><span> {{ !empty($settings['email_head'])?$settings['email_head']:'' }}</span></a>
+                    <div itemscope itemtype="http://schema.org/Organization">
+                        <p class="h1">Контакты</p>
+                        <p itemprop="name">Asafov design</p>
+                        <p>
+                            Мы находимся по адресу:<br />
+                            <span itemprop="addressLocality">Санкт-Петербург</span>
+                            <span  itemprop="streetAddress">Наб. Реки Мойки 7</span> <br /><br />
+                            Телефон:
+                            <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">
+                                <span itemprop="telephone"> {{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</span>
+                            </a> <br />
+                            E-mail:
+                            <a href="mailto:{{ !empty($settings['email_head'])?$settings['email_head']:'' }}">
+                                <span itemprop="email"> {{ !empty($settings['email_head'])?$settings['email_head']:'' }}</span>
+                            </a>
 
-                    </p>
+                        </p>
+                    </div>
                 </div>
                 <div class="col-sm-2 col-xs-12">
                     <p class="h1">Присоединяйтесь</p>
                     <div class="social">
-                        <i class="social-icons vk"></i>
+                        <a href="https://vk.com/asafovdesign" target="_blank"><i class="social-icons vk"></i></a>
+                        <!--
                         <i class="social-icons fb"></i>
                         <i class="social-icons tw"></i>
+                        -->
 
                     </div>
 
@@ -108,8 +118,6 @@
 
 {{ HTML::script('/js/main.min.js') }}
 @yield('scripts')
-
-<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34128260 = new Ya.Metrika({ id:34128260, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34128260" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
 </body>
 

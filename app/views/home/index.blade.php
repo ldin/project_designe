@@ -3,7 +3,7 @@
 @section('title') {{ !empty($settings['title'])?$settings['title']:'PMI designe' }} @stop
 
 @section('header')
-    <link href="/css/animation-main.css?01" rel="stylesheet">
+
 @stop
 
 @section('slider')
@@ -332,5 +332,5 @@
 @stop
 
 @section('scripts')
-
+    <link href="/css/animation-main.css?01" rel="stylesheet">
 @stop
