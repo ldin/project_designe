@@ -81,20 +81,22 @@
                     <div itemscope itemtype="http://schema.org/Organization">
                         <p class="h1">Контакты</p>
                         <p itemprop="name">Asafov design</p>
-                        <p>
-                            Мы находимся по адресу:<br />
-                            <span itemprop="addressLocality">Санкт-Петербург</span>
-                            <span  itemprop="streetAddress">Наб. Реки Мойки 7</span> <br /><br />
-                            Телефон:
-                            <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">
-                                <span itemprop="telephone"> {{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</span>
-                            </a> <br />
-                            E-mail:
-                            <a href="mailto:{{ !empty($settings['email_head'])?$settings['email_head']:'' }}">
-                                <span itemprop="email"> {{ !empty($settings['email_head'])?$settings['email_head']:'' }}</span>
-                            </a>
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <p>
+                                Мы находимся по адресу:<br />
+                                <span itemprop="addressLocality">Санкт-Петербург</span>
+                                <span  itemprop="streetAddress">Наб. Реки Мойки 7</span> <br /><br />
+                                Телефон:
+                                <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">
+                                    <span itemprop="telephone"> {{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</span>
+                                </a> <br />
+                                E-mail:
+                                <a href="mailto:{{ !empty($settings['email_head'])?$settings['email_head']:'' }}">
+                                    <span itemprop="email"> {{ !empty($settings['email_head'])?$settings['email_head']:'' }}</span>
+                                </a>
 
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-2 col-xs-12">
