@@ -108,22 +108,28 @@
 
                     <div class="row text-center">
                         <div class="col-xs-12 col-sm-4 concept">
-                            <div class="image img-circle">
-                                <div class="dot dot-1"></div>
-                            </div>
-                            <h3>Концепция <br> Проектирование</h3>
+                            <a href="/services/kontseptsiya-i-proektirovanie">
+                                <div class="image img-circle">
+                                    <div class="dot dot-1"></div>
+                                </div>
+                                <h3>Концепция <br> Проектирование</h3>
+                            </a>
                         </div>
                         <div class="col-xs-12 col-sm-4 modeling">
-                            <div class="image img-circle">
-                                <div class="dot dot-2"></div>
-                            </div>
-                            <h3>3D моделирование <br> Визуализация</h3>
+                            <a href="/services/3d-modelirovanie-vizualizatsiya">
+                                <div class="image img-circle">
+                                    <div class="dot dot-2"></div>
+                                </div>
+                                <h3>3D моделирование <br> Визуализация</h3>
+                            </a>
                         </div>
                         <div class="col-xs-12 col-sm-4 support">
-                            <div class="image img-circle">
-                                <div class="dot dot-3"></div>
-                            </div>
-                            <h3>Сопровождение <br> Декорирование</h3>
+                            <a href="/services/soprovojdenie-dekorirovanie">
+                                <div class="image img-circle">
+                                    <div class="dot dot-3"></div>
+                                </div>
+                                <h3>Сопровождение <br> Декорирование</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
