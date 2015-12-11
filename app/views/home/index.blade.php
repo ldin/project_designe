@@ -38,17 +38,13 @@
 
         <section id="land-page">
 
-             <article id="action">
-
-
-            <h1 class="red">Акция!</h1>
-                 <div class="hidden-xs">
-            <h2><small>Успейте, до конца осталось:</small> </h2>
-
-                 {{--<script type="text/javascript" src="http://www.timegenerator.ru/s/e02721a96c6d91e4b924e5a899394e58.js"></script>--}}
-                 </div>
-            <h2><small>Дизайн</small> <span class="red">1/5</span> <small>квартиры</small> <span class="red">БЕСПЛАТНО!</span> </h2>
-
+            <article id="action">
+                <h1 class="red">Акция!</h1>
+                <h2><small>Успейте, до конца осталось:</small></h2>
+                <div class="timer row">
+                    <div id="defaultCountdown" class="text-center"></div>
+                </div>
+                <h2><small>Дизайн</small> <span class="red">1/5</span> <small>квартиры</small> <span class="red">БЕСПЛАТНО!</span> </h2>
             </article>
 
             <article id="for-you">
@@ -359,4 +355,22 @@
 
 @section('scripts')
     <link href="/css/animation-main.css?01" rel="stylesheet">
+
+    <link rel="stylesheet" href="/module/jquery.countdown.package/jquery.countdown.css">
+
+    <style type="text/css">
+        #defaultCountdown { width: 300px; height: 45px; display: block; margin: 0 auto }
+        .countdown-section{ border: 1px solid #000; padding: 10px; margin: 5px;}
+        .is-countdown{border: none; background: none;}
+    </style>
+    <script src="/module/jquery.countdown.package/jquery.plugin.js"></script>
+    <script src="/module/jquery.countdown.package/jquery.countdown.js"></script>
+    <script>
+        $(function () {
+            var austDay = new Date();
+            austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+            $('#defaultCountdown').countdown({until: '+3d'});
+            $('#year').text(austDay.getFullYear());
+        });
+    </script>
 @stop
