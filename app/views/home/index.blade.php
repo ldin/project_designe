@@ -42,7 +42,8 @@
                 <h1 class="red">Акция!</h1>
                 <h2><small>Успейте, до конца осталось:</small></h2>
                 <div class="timer row">
-                    <div id="defaultCountdown" class="text-center"></div>
+                    <div id="countdown"></div>
+                    {{--<p id="note"></p>--}}
                 </div>
                 <h2><small>Дизайн</small> <span class="red">1/5</span> <small>квартиры</small> <span class="red">БЕСПЛАТНО!</span> </h2>
             </article>
@@ -356,21 +357,15 @@
 @section('scripts')
     <link href="/css/animation-main.css?01" rel="stylesheet">
 
-    <link rel="stylesheet" href="/module/jquery.countdown.package/jquery.countdown.css">
+    <!-- Файлы CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+    <link rel="stylesheet" href="/module/assets/countdown/jquery.countdown.css" />
 
-    <style type="text/css">
-        #defaultCountdown { width: 300px; height: 45px; display: block; margin: 0 auto }
-        .countdown-section{ border: 1px solid #000; padding: 10px; margin: 5px;}
-        .is-countdown{border: none; background: none;}
-    </style>
-    <script src="/module/jquery.countdown.package/jquery.plugin.js"></script>
-    <script src="/module/jquery.countdown.package/jquery.countdown.js"></script>
-    <script>
-        $(function () {
-            var austDay = new Date();
-            austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
-            $('#defaultCountdown').countdown({until: '+3d'});
-            $('#year').text(austDay.getFullYear());
-        });
-    </script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- JavaScript -->
+    <script src="/module/assets/countdown/jquery.countdown.js"></script>
+    <script src="/module/assets/js/script.js"></script>
 @stop
