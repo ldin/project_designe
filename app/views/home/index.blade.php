@@ -1,6 +1,6 @@
 @extends('home.layout')
 
-@section('title') {{ !empty($settings['title'])?$settings['title']:'PMI designe' }} @stop
+@section('title') {{ !empty($settings['title'])?$settings['title']:'Asafov design' }} @stop
 
 @section('header')
 
