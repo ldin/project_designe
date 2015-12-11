@@ -106,6 +106,9 @@
                                 <p>ведь основная наша задача -</p>
                                 <p class="majestic">сделать Вас счастливыми!</p>
                             </div>
+                            <div class="row text-center">
+                                <a href="/works" class="btn btn-main">Наши работы</a>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-3 text-center">
                             <img src="/images/circle-line-2.png" class="">
