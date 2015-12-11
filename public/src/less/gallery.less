@@ -19,12 +19,31 @@
     -moz-box-sizing: border-box; /* Для Firefox */ 
     -webkit-box-sizing: border-box; /* Для Safari, Chrome, iOS иAndroid */ 
     box-shadow: 2px 2px 4px 0 #ccc; /* Внешняя тень плиток */
-    img{
-        filter: grayscale(80%);
-        transition: all 0.5s;
+    a {
+        position: relative;
+        display: block;
+        &:after {
+            content: '';
+            background-color: #000;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.5s;
+        }
+        &:hover {
+            &:after {
+                opacity: 0;
+            }
+        }
     }
+
+
+
     img:hover{
-        filter: none;
+        opacity: 1;
     }
     .desc{
        margin: 10px;
