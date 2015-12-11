@@ -13,7 +13,14 @@
     <!-- Optionally add helpers - button, thumbnail and/or media -->
     <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
     <style type="text/css">
-    .fancybox-title-outside-wrap{background-color: rgba(0,0,0,0.5); padding: 10px;}
+    .fancybox-title-outside-wrap{
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+        margin-top: -40px;
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+    }
     </style>
 @stop
 
@@ -89,6 +96,7 @@
       $(".fancybox").fancybox({
           prevEffect  : 'none',
           nextEffect  : 'none',
+          padding:0,
           helpers : {
             title : {
               type: 'outside'
