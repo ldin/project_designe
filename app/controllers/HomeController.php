@@ -70,7 +70,7 @@ class HomeController extends BaseController {
             }
         }
         else if($type_post->template=='portfolio'){
-            $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('created_at', 'desc')->get();
+            $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('order', 'asc')->get();
             foreach ($posts as $key => $post) {
                 $post->galleries = Gallery::where('post_id', $post->id)->get();
             }

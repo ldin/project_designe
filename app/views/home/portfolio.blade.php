@@ -46,8 +46,9 @@
                                   <a class="fancybox" rel="gallery" href="{{ $image->image }}" title="{{ $image->text }}">
                                     {{ HTML::image($image->small_image, $image->alt) }}
                                   </a>
-                                  <br>
-                                  {{ $image->text }}
+                                  <div class="desc">
+                                      {{ $image->text }}
+                                  </div>
                                 </div>
                             @endforeach
                             <!-- Конец адаптивных блоков с содержанием -->
