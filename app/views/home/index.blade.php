@@ -8,7 +8,7 @@
 
 @section('slider')
 
-    <div class="head js-header-block">
+    <article class="head js-header-block" data-type="background" data-speed="10">
         <div class="container">
             <div class="logo">
                 <div class="main-ADlogo"></div>
@@ -31,7 +31,7 @@
                 <a href="tel:{{!empty($settings['phone_head'])?'+7'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">{{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</a>
             </p>
         </div>
-    </div>
+    </article>
 @stop
 
 @section('content')
@@ -40,11 +40,12 @@
 
              <article id="action">
 
+
             <h1 class="red">Акция!</h1>
                  <div class="hidden-xs">
             <h2><small>Успейте, до конца осталось:</small> </h2>
 
-                 <script type="text/javascript" src="http://www.timegenerator.ru/s/e02721a96c6d91e4b924e5a899394e58.js"></script>
+                 {{--<script type="text/javascript" src="http://www.timegenerator.ru/s/e02721a96c6d91e4b924e5a899394e58.js"></script>--}}
                  </div>
             <h2><small>Дизайн</small> <span class="red">1/5</span> <small>квартиры</small> <span class="red">БЕСПЛАТНО!</span> </h2>
 
@@ -118,7 +119,7 @@
                 </div>
             </article>
 
-            <article id="services">
+            <article id="services"  data-type="background" data-speed="100">
                 <div class="container">
                     <h2>Наши услуги</h2>
                     <hr class="line">

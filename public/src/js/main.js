@@ -28,6 +28,7 @@ $( document ).ready(function() {
     $('#price td i').addClass('glyphicon glyphicon-ok');
 
     //ширина для наклонных блоков
+    /*
     var w = $(window).width();
     $('.triangle-box.top').css('border-left-width', w);
     $('.triangle-box.bottom').css('border-right-width', w);
@@ -35,6 +36,18 @@ $( document ).ready(function() {
         var w = $(window).width();
         $('.triangle-box.top').css('border-left-width', w);
         $('.triangle-box.bottom').css('border-right-width', w);
+    });
+    */
+
+    //Parallax Scrolling animation
+
+    $('article[data-type="background"]').each(function(){
+        var $bgobj = $(this);
+        $(window).scroll(function() {
+            var yPos = -($(window).scrollTop() / $bgobj.data('speed'));
+            var coords = 'center '+ yPos + 'px';
+            $bgobj.css({ backgroundPosition: coords });
+        });
     });
 
 

@@ -131,11 +131,12 @@ a:focus{outline: none}
 
 header {
   .head {
+    background: url("../images/bg/bg-top2.jpg") 50% 0 no-repeat fixed;
     height: 800px;
-    background: no-repeat url("../images/bg/bg-top2.jpg") center;
     background-size: cover;
     text-align: center;
     color: #ffffff;
+    z-index: 1;
     .logo{
       font-size: 20px;
       margin: 70px 0 100px;
@@ -186,7 +187,7 @@ header {
   #menu{
     nav{background: @black;}
     &.relative{position: relative;}
-    &.fixed{position: fixed; top: 0; width: 100%; height: 50px; z-index: 1;}
+    &.fixed{position: fixed; top: 0; width: 100%; height: 50px; z-index: 10;}
     .main-ADlogo{
       width: 250px;
       a:hover{background-color: transparent;}
@@ -263,7 +264,10 @@ header {
   }
 
   #services{
-    background: url("../images/bg/bg-22.jpg") center;
+    background: url("../images/bg/bg-22.jpg") 50% 0 no-repeat fixed;
+    z-index: 1;
+    //min-height: 100px;
+    //background: url("../images/bg/bg-22.jpg") center;
     background-size: cover;
     padding-bottom: 50px;
     hr.line:after{ background: transparent;}
