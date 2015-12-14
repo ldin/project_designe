@@ -3,6 +3,12 @@
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     @if(!empty($row->description))
+         <meta name="Description" content="{{$row->description}}">
+     @endif
+     @if(!empty($row->keywords))
+         <meta name="Keywords" content="{{$row->keywords}}">
+     @endif
 
     <title>@yield('title')</title>
 
