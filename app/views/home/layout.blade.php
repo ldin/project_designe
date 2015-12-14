@@ -67,14 +67,16 @@
                     <p>Профессионально Модно Индивидуально</p>
                 </div>
                 <div class="col-sm-3 col-xs-12">
-                    <p class="h1">Наши услуги</p>
-                    <ul>
-                        <li>Концепция </li>
-                        <li>Проектирование </li>
-                        <li>3D моделирование</li>
-                        <li>Визуализация</li>
-                        <li>Сопровождение</li>
-                        <li>Декорирование</li>
+                    <ul class="pages">
+                        <li><a href="/services">Наши услуги</a>
+                            <ul>
+                                <li><a href="/services/kontseptsiya-i-proektirovanie">Концепция / Проектирование </a></li>
+                                <li><a href="/services/3d-modelirovanie-vizualizatsiya">3D моделирование / Визуализация</a></li>
+                                <li><a href="/services/soprovojdenie-dekorirovanie">Сопровождение / Декорирование</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/price">Стоимость</a></li>
+                        <li><a href="/news">Новости</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 col-xs-12">
