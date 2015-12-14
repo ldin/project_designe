@@ -9,6 +9,9 @@ Thumbs.db
 
 
 app/config/local/
+public/sitemap.xml
+public/node_modules
+.idea/
 #bootstrap/start.php
 #app/config/app.php
 #app/config/database.php
