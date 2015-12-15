@@ -4,17 +4,31 @@ $( document ).ready(function() {
      // menu fix
     var menu = $("#menu");
     var header = $('.js-header-block');
+    var doc_h = $(window).height();
     //console.log(header.length);
     $(window).scroll(function(){
         var height = header.height();
         if ( $(this).scrollTop() > height && menu.hasClass("relative") ){
             menu.removeClass("relative").addClass("fixed");
-            //$("#main-logo").css( { marginBottom : "0", height : "50px", width:"102px"  } );
         } else if($(this).scrollTop() <= height && menu.hasClass("fixed")) {
             menu.removeClass("fixed").addClass("relative");
-            //$("#main-logo").css( { marginBottom : "-43px", height : "82px", width:"130px" } );
         }
     });
+    //недоработанная версия фиксации меню снизу(неверно на внутренних)
+    //console.log(header.length);
+    //if(header.length>0){menu.removeClass("fix-top").addClass("fix-bottom");}
+    //
+    //$(window).scroll(function(){
+    //    var height = header.height();
+    //    var scrollTop =  $(this).scrollTop();
+    //    if ( scrollTop > height && menu.hasClass("relative") ){
+    //        menu.removeClass("relative").addClass("fix-top");
+    //    } else if(scrollTop <= height && (scrollTop + doc_h)  >= height && (menu.hasClass("fix-top") || menu.hasClass("fix-bottom"))) {
+    //        menu.removeClass("fix-bottom").removeClass("fix-top").addClass("relative");
+    //    } else if(scrollTop <= height && (scrollTop + doc_h) < height && menu.hasClass("relative") ) {
+    //        menu.removeClass("relative").addClass("fix-bottom");
+    //    }
+    //});
 
     //soft scrolling
     $('a[href^="#"]').click(function () {

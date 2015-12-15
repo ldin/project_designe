@@ -20,10 +20,6 @@
             <div class="logo">
                 <div class="main-ADlogo"></div>
                 <p><span>профессионально модно индивидуально</span></p>
-                <!--
-                <img src="/images/ASDlogo-w.png">
-                <p>Архитектура Строительство<br> Дизайн</p>
-                -->
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
@@ -45,20 +41,8 @@
 
         <section id="land-page">
 
-            <article id="action">
-                <h1 class="red">Акция!</h1>
-                <h2><small>Успейте, до конца осталось:</small></h2>
-                <div class="timer">
-                    <div id="countdown"></div>
-                    {{--<p id="note"></p>--}}
-                </div>
-                <h2><small>Дизайн</small> <span class="red">1/5</span> <small>квартиры</small> <span class="red">БЕСПЛАТНО!</span> </h2>
-            </article>
-
             <article id="for-you">
-                <!--
                 <h2>Для Вас</h2>
-                -->
                 <hr class="line">
                 <div class="container">
                     <div class="row text-center">
