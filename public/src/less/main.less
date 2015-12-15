@@ -132,7 +132,7 @@ a:focus{outline: none}
 
 header {
   .head {
-    background: url("../images/bg/bg-top2.jpg") 50% 0 no-repeat fixed;
+    background: url("../images/bg/bg-1var1.jpg") 50% 0 no-repeat fixed;
     height: 800px;
     background-size: cover;
     text-align: center;
@@ -268,7 +268,7 @@ header {
   }
 
   #services{
-    background: url("../images/bg/bg-22.jpg") 50% 0 no-repeat fixed;
+    background: url("../images/bg/bg-2var2.jpg") 50% 0 no-repeat fixed;
     z-index: 1;
     //min-height: 100px;
     //background: url("../images/bg/bg-22.jpg") center;
@@ -426,19 +426,39 @@ header {
     img{ max-width: 100%; margin: 20px 0; width: 100%;}
 
     #tegs{
+      .preview .block{
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 150px;
+        text-decoration: none;
+        transition:all 1s;
+        img{
+          width: 100%; height: 100%;
+          position: absolute;
+          top:0; margin: 0;
+        }
+        .descr{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top:0;
+          background: rgba(0,0,0,0.1);
+          padding-top: 50px;
+          text-align: center;
+          color: transparent;
+          transition:all 2s;
+          &:hover{
+            background: rgba(0,0,0,0.9);color:@white;
+          }
+        }
+
+      }
+
       ul{list-style: none; padding: 0;}
       li{
         display: inline-block;
         margin: 0 5px;
-        a{
-          color: #c8c8c8;
-          font-weight: bold;
-        }
-        a:hover{
-          color: #9e9e9e;
-          text-decoration: none;
-        }
-        &.active a{color: @orange;}
       }
     }
   }

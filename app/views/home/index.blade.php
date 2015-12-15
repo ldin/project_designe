@@ -3,6 +3,13 @@
 @section('title') {{ !empty($settings['title'])?$settings['title']:'Asafov design' }} @stop
 
 @section('header')
+    <meta property="og:type" content="profile"/>
+    <meta property="profile:first_name" content="Илья"/>
+    <meta property="profile:last_name" content="Асафов"/>
+    {{--<meta property="og:description" content=""/>--}}
+    <meta property="og:image" content="http://asafov.design/images/circle-line-my2.png"/>
+    <meta property="og:url" content="http://asafov.design"/>
+    <meta property="og:site_name" content="Asafov design. Профессионально. Модно. Индивидуально."/>
 
 @stop
 
@@ -41,7 +48,7 @@
             <article id="action">
                 <h1 class="red">Акция!</h1>
                 <h2><small>Успейте, до конца осталось:</small></h2>
-                <div class="timer row">
+                <div class="timer">
                     <div id="countdown"></div>
                     {{--<p id="note"></p>--}}
                 </div>
@@ -93,7 +100,7 @@
                     <br>
                     <div class="row">
                         <div class="col-xs-12 col-sm-3 text-center">
-                            <img src="/images/circle-line-1.png" class="">
+                            <img src="/images/circle-line-my1.png" class="" alt="Дизайн спальни, готовая работа Ильи Асафова ">
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <div class="first">
@@ -109,7 +116,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-3 text-center">
-                            <img src="/images/circle-line-2.png" class="">
+                            <img src="/images/circle-line-my2.png" class="" alt="Дизайн гостиной, 3D визуализация дизайнера Ильи Асафова">
                         </div>
 
                     </div>
@@ -159,14 +166,14 @@
                         <div class="col-xs-6 col-sm-3">
                             <a href="/price">
                                 <div class="img">
-                                    <img src="/images/ico/rate-sketsh.jpg">
+                                    <img src="/images/ico/rate-sketsh.jpg" alt="Эскизный тариф">
                                 </div>
                                 <p class="price">от 600 р/м.кв</p>
                                 <h3>Эскизный</h3>
                                 <p>В тариф включено:</p>
                                 <p>
                                     Разработка прототипа<br>
-                                    Разработкка плана объекта<br>
+                                    Разработка плана объекта<br>
                                     Разработка плана в AutoCad<br>
                                 </p>
                             </a>
@@ -174,14 +181,14 @@
                         <div class="col-xs-6 col-sm-3">
                             <a href="/price">
                                 <div class="img">
-                                    <img src="/images/ico/rate-standart.jpg">
+                                    <img src="/images/ico/rate-standart.jpg" alt="тариф Стандарт">
                                 </div>
                                 <p class="price">от 1000 р/м.кв</p>
                                 <h3>Стандарт</h3>
                                 <p>В тариф включено:</p>
                                 <p>
                                     Разработка прототипа<br>
-                                    Разработкка плана объекта<br>
+                                    Разработка плана объекта<br>
                                     Разработка плана в AutoCad<br>
                                     2D визуализация<br>
                                     3 цветовых решения<br>
@@ -191,14 +198,14 @@
                         <div class="col-xs-6 col-sm-3">
                             <a href="/price">
                                 <div class="img">
-                                    <img src="/images/ico/rate-max.jpg">
+                                    <img src="/images/ico/rate-max.jpg" alt="тариф Максимум">
                                 </div>
                                 <p class="price">от 1500 р/м.кв</p>
                                 <h3>Максимум</h3>
                                 <p>В тариф включено:</p>
                                 <p>
                                     Разработка прототипа<br>
-                                    Разработкка плана объекта<br>
+                                    Разработка плана объекта<br>
                                     Разработка плана в AutoCad<br>
                                     3D визуализация<br>
                                     5 цветовых решений<br>
@@ -208,14 +215,14 @@
                         <div class="col-xs-6 col-sm-3">
                             <a href="/price">
                                 <div class="img">
-                                    <img src="/images/ico/rate-maxpl.jpg">
+                                    <img src="/images/ico/rate-maxpl.jpg" alt="тариф Максимум +">
                                 </div>
                                 <p class="price">от 3000 р/м.кв</p>
                                 <h3>Максимум +</h3>
                                 <p>В тариф включено:</p>
                                 <p>
                                     Разработка прототипа<br>
-                                    Разработкка плана объекта<br>
+                                    Разработка плана объекта<br>
                                     Разработка плана в AutoCad<br>
                                     Несколько 3D визуализаций<br>
                                     До 10 цветовых решений<br>
