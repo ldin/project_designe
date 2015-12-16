@@ -57,13 +57,11 @@ class HomeController extends BaseController {
         }
 
         else if($type_post->template=='news'){
-
             if($slug==''){
                 $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('created_at', 'desc')->paginate(6);
             }else{
                 $row = Post::where('slug', $slug)->first();            
             }
-
             foreach ($posts as $key => $post) {
                 $preview = HomeController::previewFirstSimbol($post->text, 500);
                 $post->preview = $preview['text'];
@@ -75,15 +73,10 @@ class HomeController extends BaseController {
                 $post->galleries = Gallery::where('post_id', $post->id)->get();
             }
         }
-        else if($type_post->template=='style'){
-            $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('order', 'asc')->get();
 
-        }
         else{
-            
-            $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('created_at', 'desc')->get();
-            $posts_child = Post::where('type_id',$type_post->id)->where('status',1)->where('parent', '!=',0)->orderBy('created_at', 'desc')->get();
-
+            $posts = Post::where('type_id',$type_post->id)->where('status',1)->where('parent',0)->orderBy('order', 'asc')->get();
+            $posts_child = Post::where('type_id',$type_post->id)->where('status',1)->where('parent', '!=',0)->orderBy('order', 'asc')->get();
 
             if($slug!=''){
                 $row = Post::where('slug',$slug)->first();
