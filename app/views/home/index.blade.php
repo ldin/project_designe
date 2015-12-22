@@ -42,7 +42,7 @@
         <section id="land-page">
 
             <article id="for-you">
-                <h2>Для Вас</h2>
+                <h1>Архитектурная мастерская<br> "Asafov design"</h1>
                 <hr class="line">
                 <div class="container">
                     <div class="row text-center">
@@ -66,6 +66,18 @@
                                 <p class="num"><span class="big"><img src="/images/ico/infinity.png" ></span></p>
                                 <p class="desc"><i>довольных</i><br> <span>клиентов</span></p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row text-block">
+                        <div class="col-xs-12 col-sm-6">
+                            <p>
+                                <b>Главное направления</b> деятельности <b>Asafov design</b> — это архитектурные проекты, ландшафтное проектирование и дизайн интерьеров.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <p>
+                                Сотрудничество с нами обеспечивает высококачественное проектирование объектов, контроль реализации проектов и оптимизацию сроков их выполнения.
+                            </p>
                         </div>
                     </div>
                     <div class="row text-center">
