@@ -432,40 +432,41 @@ header {
     h1, h2{text-align: center;}
     img{ max-width: 100%; margin: 20px 0; width: 100%;}
 
-    #tegs{
-      .preview .block{
-        display: inline-block;
-        position: relative;
+    ul{list-style: none; padding: 0;}
+    li{
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    #preview{
+      li{
         width: 200px;
         height: 150px;
-        text-decoration: none;
-        transition:all 1s;
-        img{
-          width: 100%; height: 100%;
-          position: absolute;
-          top:0; margin: 0;
-        }
-        .descr{
+        position: relative;
+        img{margin: 0;}
+        .block, .descr{
           position: absolute;
           width: 100%;
           height: 100%;
-          top:0;
-          background: rgba(0,0,0,0.1);
-          padding-top: 50px;
-          text-align: center;
-          color: transparent;
-          transition:all 2s;
-          &:hover{
-            background: rgba(0,0,0,0.9);color:@white;
+          top:0; left:0;
+        }
+        .block{
+          background-color: @black;
+        }
+        .descr{
+          opacity: 0;
+          transition:all 0.5s;
+          p{
+            text-align: center;
+            margin-top: 30%;
+            color: @white;
           }
         }
+        &:hover .descr{
+          opacity: 1;
+          background: rgba(0,0,0,0.5);
 
-      }
-
-      ul{list-style: none; padding: 0;}
-      li{
-        display: inline-block;
-        margin: 0 5px;
+        }
       }
     }
   }

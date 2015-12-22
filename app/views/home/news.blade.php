@@ -31,6 +31,8 @@
             @if(isset($posts)&&count($posts)>0)
                <?php $k=0; ?>
 
+                <h1>Новости</h1>
+
                 @foreach($posts as $post)
                 <div class="news-item">
                     <p class="date">{{ date( 'd.m.Y', strtotime($post->created_at)) }}</p>

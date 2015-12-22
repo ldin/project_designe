@@ -18,10 +18,28 @@
             @if(empty($row) && !empty($type->text) )
                 {{ $type->text }}
             @elseif(empty($row))
-                <?php if(!$row){$row = $posts[0];} ?>
-            @endif
 
-            @if(!empty($row))
+                <div class="col-xs-12" id="preview">
+                    <h1>Основные стили интерьера</h1>
+                    <ul class="">
+                        @foreach($posts as $post)
+                            <li >
+                                <a href="{{'/'.$type->type.'/'.$post->slug }}" class="preview">
+                                    <div class="block">
+                                        @if(!empty($post->image))
+                                            {{ HTML::image($post->image, $post->alt) }}
+                                        @endif
+                                    </div>
+                                    <div class="descr">
+                                        <p>#{{ $post->name }}</p>
+                                    </div>
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            @elseif(!empty($row))
                 <h1>{{ $row->name  }} стиль</h1>
                 @if(!empty($row->image))
                     {{ HTML::image($row->image, $row->alt) }}
@@ -33,46 +51,30 @@
 
                 @endif
 
+                <div class="col-xs-12" id="tegs">
+                    <ul class="">
+                        @foreach($posts as $post)
+                            <li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >
+
+                                <a href="{{'/'.$type->type.'/'.$post->slug }}" class="">
+                                    <div class="block">
+                                        <div class="descr">
+                                            <p>#{{ $post->name }}</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+
             @endif
 
         </div>
 
-        <div class="col-xs-12" id="tegs">
-            <ul class="">
-                @foreach($posts as $post)
-                    <li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >
 
-                        <a href="{{'/'.$type->type.'/'.$post->slug }}" class="">
-                            <div class="block">
-                                <div class="descr">
-                                    <p>#{{ $post->name }}</p>
-                                </div>
-                            </div>
-                        </a>
 
-                    </li>
-                @endforeach
-            </ul>
-        </div>
-
-        {{--<div class="col-xs-12" id="tegs">--}}
-            {{--<ul class="">--}}
-                {{--@foreach($posts as $post)--}}
-                    {{--<li {{ (Request::is( $type->type.'/'.$post->slug)) || (!empty($row)&&$row->parent==$post->id)? 'class="active"' : '' }} >--}}
-
-                        {{--<a href="{{'/'.$type->type.'/'.$post->slug }}" class="preview">--}}
-                            {{--<div class="block">--}}
-                                {{--{{ HTML::image($post->image, $post->alt) }}--}}
-                                {{--<div class="descr">--}}
-                                    {{--<p>#{{ $post->name }}</p>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</a>--}}
-
-                    {{--</li>--}}
-                {{--@endforeach--}}
-            {{--</ul>--}}
-        {{--</div>--}}
 
 
 
