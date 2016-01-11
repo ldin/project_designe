@@ -204,7 +204,8 @@ class AdminController extends BaseController {
             if(!empty($image)) {
                 $image_name = explode("/", $image);
                 if(!empty($image_name[2])) {
-
+var_dump($post, $image_name);
+die();
                     $image_name = $image_name[2];
                     if (!is_dir('upload/image/small/')) {
                         mkdir('upload/image/small/', 0777, true);
