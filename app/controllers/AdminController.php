@@ -208,7 +208,7 @@ class AdminController extends BaseController {
                 $image_name = $image_name[2];
                 Image::make($image)->resize('300', null, function ($constraint) {
                     $constraint->aspectRatio();
-                })->save('upload/image/small/'.$image_name);
+                })->save('/upload/image/small/'.$image_name);
 //                $image_name = explode("/", $image);
                 $post_new = Post::find($post->id);
                 $post_new->image = $image_name;
