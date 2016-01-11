@@ -38,7 +38,7 @@
                     <p class="date">{{ date( 'd.m.Y', strtotime($post->created_at)) }}</p>
                     <div class=" title-block">
                         <div class="col-xs-12 col-sm-6 part part-img">
-                            {{ HTML::image($post->image, $post->name) }}
+                            {{ HTML::image('/upload/image/small/'.$post->image, $post->name) }}
                         </div>
                         <div class="col-xs-12 col-sm-6 part part-title">
                             <a href="{{$type->type.'/'.$post->slug}}"><h2>{{ $post->name }}</h2></a>

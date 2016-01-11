@@ -197,35 +197,6 @@ class AdminController extends BaseController {
                     ->with('success-img'.$image_id, 'Изменения сохранены');
         }
 
-    public function getEditNameImage(){
-        $posts = Post::get();
-        foreach($posts as $post){
-            $image = $post->image;
-            if(!empty($image)) {
-                $image_name = explode("/", $image);
-                if(!empty($image_name[2])) {
-//var_dump($post, $image_name);
-//die();
-                    $image_name = $image_name[2];
-                    if (!is_dir('upload/image/small/')) {
-                        mkdir('upload/image/small/', 0777, true);
-                    }
-
-                    Image::make($image)->resize('300', null, function ($constraint) {
-                        $constraint->aspectRatio();
-                    })->save('upload/image/small/' . $image_name);
-//                $image_name = explode("/", $image);
-                    $post_new = Post::find($post->id);
-                    $post_new->image = $image_name;
-                    $post_new->save();
-                    var_dump($post->id, $image_name);
-//                die();
-                }
-            }
-
-        }
-    }
-
     public function saveImage( $object, $path, $sm_wh='300'){
         if(empty($object) || empty($path)){return;}
 
