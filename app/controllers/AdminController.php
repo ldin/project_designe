@@ -47,7 +47,6 @@ class AdminController extends BaseController {
                 'page'=>'Текст',
                 'news'=>'Новости',
                 'portfolio'=>'Портфолио',
-//                'gallery'=>'Галерея',
         );
 
         //добавляем категорию
@@ -117,11 +116,7 @@ class AdminController extends BaseController {
             $post->keywords = $all['keywords'];
 
             if(isset($all['image'])){
-                $full_name = Input::file('image')->getClientOriginalName();
-                $filename=$full_name;
-                $path = 'upload/image/';
-                Input::file('image')->move($path, $filename);
-                $post->image = $path.$filename;
+                $post->image = AdminController::saveImage($all['image'], 'upload/image/', 250);
             }
 
             $post->save();
@@ -163,7 +158,7 @@ class AdminController extends BaseController {
                     ->with('success', 'Изменения сохранены');
         }
 
-public function postImageGallery($type_id, $post_id, $image_id='add')
+    public function postImageGallery($type_id, $post_id, $image_id='add')
         {
             $all = Input::all();
             if($image_id=='add'){
@@ -192,26 +187,57 @@ public function postImageGallery($type_id, $post_id, $image_id='add')
             $post->alt = $all['alt'];
             
             if(!empty($all['image'])){
-                $full_name = Input::file('image')->getClientOriginalName();
-                $filename=$full_name;
-                $path = 'upload/gallery/'.$post_id.'/';
-                $path_sm = 'upload/gallery/'.$post_id.'/small/';
-                if(!is_dir($path_sm)){
-                    mkdir($path_sm, 0777, true);
-                }
-                Input::file('image')->move($path, $filename);
+                $path='upload/gallery/'.$post_id.'/';
+                $filename = AdminController::saveImage($all['image'], $path, 250);
                 $post->image = $path.$filename;
-
-                Image::make($path.$filename)->resize(300, null, function ($constraint) {
-                    $constraint->aspectRatio();
-                })->save($path_sm.$filename);
-                $post->small_image = $path_sm.$filename;
+                $post->small_image = $path.'small/'.$filename;
             }
             $post->save();
             return Redirect::to('/admin/content/'.$type_id.'/'.$post_id.'/#image-'.$image_id)
                     ->with('success-img'.$image_id, 'Изменения сохранены');
         }
 
+    public function getEditNameImage(){
+        $posts = Post::get();
+        foreach($posts as $post){
+            $image = $post->image;
+            if(!empty($image)) {
+                $image_name = explode("/", $image);
+                if(empty($image_name[2])) return;
+
+                $image_name = $image_name[2];
+                Image::make($image)->resize('300', null, function ($constraint) {
+                    $constraint->aspectRatio();
+                })->save('upload/image/small/'.$image_name);
+//                $image_name = explode("/", $image);
+                $post_new = Post::find($post->id);
+                $post_new->image = $image_name;
+                $post_new->save();
+                var_dump($post->id,$image_name);
+//                die();
+            }
+
+        }
+    }
+
+    public function saveImage( $object, $path, $sm_wh='300'){
+        if(empty($object) || empty($path)){return;}
+
+        $filename = Input::file('image')->getClientOriginalName();
+        $path_sm = $path.'small/';
+
+        if(!is_dir($path_sm)){
+            mkdir($path_sm, 0777, true);
+        }
+        Input::file('image')->move($path, $filename);
+
+        Image::make($path.$filename)->resize($sm_wh, null, function ($constraint) {
+            $constraint->aspectRatio();
+        })->save($path_sm.$filename);
+
+        return $filename;
+
+    }
 
 //удаление страниц
     public function getDelete($type, $type_id, $id){

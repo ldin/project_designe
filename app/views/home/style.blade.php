@@ -27,7 +27,7 @@
                                 <a href="{{'/'.$type->type.'/'.$post->slug }}" class="preview">
                                     <div class="block">
                                         @if(!empty($post->image))
-                                            {{ HTML::image($post->image, $post->alt) }}
+                                            {{ HTML::image('/upload/image/small/'.$post->image, $post->alt) }}
                                         @endif
                                     </div>
                                     <div class="descr">
@@ -42,7 +42,7 @@
             @elseif(!empty($row))
                 <h1>{{ $row->name  }} стиль</h1>
                 @if(!empty($row->image))
-                    {{ HTML::image($row->image, $row->alt) }}
+                    {{ HTML::image('/upload/image/'.$row->image, $row->alt) }}
                     {{ $row->text }}
                 @else
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3">

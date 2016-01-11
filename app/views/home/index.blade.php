@@ -63,7 +63,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <div class="circle">
                                 <div class="dot dot-3"></div>
-                                <p class="num"><span class="big"><img src="/images/ico/infinity.png" ></span></p>
+                                <p class="num"><span class="big"><img src="/images/ico/infinity.png" alt="бесконечность"></span></p>
                                 <p class="desc"><i>довольных</i><br> <span>клиентов</span></p>
                             </div>
                         </div>

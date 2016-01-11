@@ -79,7 +79,7 @@
                 @if(isset($row->image)&&($row->image))
                     <br>
                     <div class="img img-thumbnail">
-                        {{ HTML::image($row->image, 'img') }}
+                        {{ HTML::image('/upload/image/small/'.$row->image, 'img') }}
                     </div>
                 @endif
             </div>
