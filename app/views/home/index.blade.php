@@ -27,13 +27,22 @@
                     <p class="h1 style"><span class="reference">Эталон</span><br> стиля</p>
                 </div>
             </div>
+        </div>
+            <!--
             <hr>
             <p class="f-lighter">Проектируя глобально, остаемся внимательными к мелочам.</p>
             <hr>
+            -->
+            <hr class="hrorange">
+            <div class="orangepor">
+                <p><b>Дизайн</b> и <b>визуализация</b> под ключ <b>5000 руб.</b></p>
+                <p class="small">подробности по телефону:</p>
+            </div>
+            <hr class="hrorange">
             <p class="phone">
                 <a href="tel:{{!empty($settings['phone_head'])?'+7'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">{{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</a>
             </p>
-        </div>
+        {{--</div>--}}
     </article>
 @stop
 
