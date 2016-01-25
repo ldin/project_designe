@@ -95,7 +95,7 @@
                                 <span itemprop="addressLocality">Санкт-Петербург</span>
                                 <span  itemprop="streetAddress">Наб. Реки Мойки 7</span> <br /><br />
                                 Телефон:
-                                <a href="tel:{{!empty($settings['phone_head'])?'+'.preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">
+                                <a href="tel:{{!empty($settings['phone_head'])?preg_replace('/[^0-9]/', '', $settings['phone_head']):''}}">
                                     <span itemprop="telephone"> {{ !empty($settings['phone_head'])?$settings['phone_head']:'' }}</span>
                                 </a> <br />
                                 E-mail:
